@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/util/DebugGL.cpp
+
+/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/util/FileUtils.cpp
+
+/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/util/Timer.cpp
+Timer.h
+/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/util/Timer.h
+
+/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/util/Timer.h
+chrono
+-
+

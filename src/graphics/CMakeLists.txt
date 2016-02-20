@@ -1,0 +1,2 @@
+add_library(graphics Window.cpp Window.h Shader.cpp Shader.h ShaderProgram.cpp ShaderProgram.h VertexBuffer.cpp VertexBuffer.h VertexArray.cpp VertexArray.h Renderable2D.cpp Renderable2D.h Renderer2D.h SimpleRenderer2D.cpp SimpleRenderer2D.h IndexBuffer.cpp IndexBuffer.h)
+target_link_libraries(graphics ${ext_libraries} util)
