@@ -18,13 +18,14 @@ class VertexArray
 private:
     struct BufferInfo
     {
-        BufferInfo(VertexBuffer vbo, IndexBuffer ibo, GLuint index):
+        VertexBuffer* vbo;
+        IndexBuffer* ibo;
+        GLuint index;
+
+        BufferInfo(VertexBuffer *vbo, IndexBuffer *ibo, GLuint index):
         vbo(vbo),
         ibo(ibo),
         index(index){}
-        VertexBuffer vbo;
-        IndexBuffer ibo;
-        GLuint index;
     };
     GLuint handle;
     std::map<std::string, BufferInfo> buffers;

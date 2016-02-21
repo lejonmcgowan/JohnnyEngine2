@@ -135,7 +135,7 @@ public:
             std::cout << "list of uniforms" << std::endl;
             for(auto uniform: uniforms)
             {
-                std::cout << uniform.second.getName() <<  "of type" << uniform.second.getType() << std::endl;
+                std::cout << uniform.second.getName() <<  " of type" << uniform.second.getType() << std::endl;
             }
             notFoundList.push_back(name);
         }

@@ -20,8 +20,8 @@ void VertexArray::addBuffer(VertexBuffer *vbo, IndexBuffer *ibo, GLuint index)
     else
         finalIBO = ibo;
 
-        BufferInfo bufferInfo(*vbo,*finalIBO,index);
-    buffers.emplace(vbo->getName(), bufferInfo);
+        BufferInfo bufferInfo(vbo,finalIBO,index);
+    buffers.insert(std::pair<std::string,BufferInfo>(vbo->getName(), bufferInfo));
 
     std::cout << "done" << std::endl;
 }
@@ -45,22 +45,29 @@ void VertexArray::generate(GLenum drawType)
     for (auto buffer: buffers)
     {
         GLuint index = buffer.second.index;
-        glEnableVertexAttribArray(index);
-        glVertexAttribPointer(index, buffer.second.vbo.getComponentSize(), GL_FLOAT, GL_FALSE, 0, nullptr);
 
-        buffer.second.vbo.bind();
-        buffer.second.vbo.generate(drawType);
-        if (!buffer.second.ibo.isNull())
+        buffer.second.vbo->bind();
+        checkGLError;
+        buffer.second.vbo->generate(drawType);
+        checkGLError;
+        if (!buffer.second.ibo->isNull())
         {
-            buffer.second.ibo.bind();
-            buffer.second.ibo.generate(drawType);
+            buffer.second.ibo->bind();
+            buffer.second.ibo->generate(drawType);
         }
+
+        glVertexAttribPointer(index, buffer.second.vbo->getComponentSize(), GL_FLOAT, GL_FALSE, 0,(GLvoid *)0);
+        checkGLError;
+        glEnableVertexAttribArray(index);
+        checkGLError;
+
+        buffer.second.vbo->unbind();
 
     }
 
     unbind();
-
     checkGLError;
+
 }
 
 VertexBuffer* VertexArray::getVBOByName(std::string name)
@@ -70,7 +77,7 @@ VertexBuffer* VertexArray::getVBOByName(std::string name)
 
     if(mapIter != buffers.end())
     {
-        vbo = &mapIter->second.vbo;
+        vbo = mapIter->second.vbo;
     }
 
     return vbo;
@@ -83,7 +90,7 @@ IndexBuffer* VertexArray::getIBOByName(std::string name)
 
     if(mapIter != buffers.end())
     {
-        ibo = &mapIter->second.ibo;
+        ibo = mapIter->second.ibo;
     }
 
     return ibo;

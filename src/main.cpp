@@ -15,15 +15,21 @@
 
 using namespace std;
 
-GLfloat vertices[12] = {0.5f,0.5f,0.0f,
-                      0.5f,-0.5f,0.0f,
-                      -0.5f,-0.5f,0.0f,
-                      -0.5f,0.5f,0.0f};
+GLfloat vertices[] = {
+        0.5f,  0.5f, 0.0f,  // Top Right
+        0.5f, -0.5f, 0.0f,  // Bottom Right
+        -0.5f, -0.5f, 0.0f,  // Bottom Left
+        -0.5f,  0.5f, 0.0f   // Top Left
+};
 
+GLuint indices[] = {  // Note that we start from 0!
+        0, 1, 3,  // First Triangle
+        1, 2, 3   // Second Triangle
+};
 int main()
 {
     Window window("Simple Engine!", 800,600);
-    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+    glClearColor(0.1f, 0.8f, 0.1f, 1.0f);
 
     Shader vert(GL_VERTEX_SHADER,"shd/red.vert");
     Shader frag(GL_FRAGMENT_SHADER,"shd/red.frag");
@@ -34,8 +40,9 @@ int main()
 //    sprite.init();
 
     VertexArray vao;
-    vao.addBuffer(new VertexBuffer("vertex",4), nullptr,0);
+    vao.addBuffer(new VertexBuffer("vertex",3),new IndexBuffer(),0);
     vao.getVBOByName("vertex")->addData(vertices);
+    vao.getIBOByName("vertex")->addData(indices);
     vao.generate();
 
     ShaderProgram shaderProgram;
@@ -49,10 +56,14 @@ int main()
         window.clear();
         double x, y;
         window.getMousePosition(x, y);
+        //std::cout << "(" << x << "," << y << ")" << std::endl;
+        shaderProgram.setUniform("lightPos",glm::vec2(x,window.getHeight() - y));
 
 #if 1
+        shaderProgram.bind();
+        shaderProgram.update();
         vao.bind();
-        glDrawArrays(GL_STATIC_DRAW,0,12);
+            glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         vao.unbind();
 #else
         renderer.submit(sprite);
