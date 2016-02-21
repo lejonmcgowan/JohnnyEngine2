@@ -15,6 +15,7 @@
 class IndexBuffer
 {
 private:
+    bool null = false;
     GLuint handle;
     GLenum bufferType = GL_ELEMENT_ARRAY_BUFFER;
     std::vector<GLuint> bufferData;
@@ -22,15 +23,17 @@ private:
 
     void makeDirty()
     { configured = false; }
-
+    IndexBuffer(bool init);
 public:
+    static IndexBuffer nullIBO;
+
     IndexBuffer();
 
     ~IndexBuffer();
 
     void generate(GLenum drawType = GL_STATIC_DRAW);
 
-    inline void bind() const;
+    void bind() const;
 
     unsigned long getBufferSize() const
     { return bufferData.size(); }
@@ -64,6 +67,7 @@ public:
     };
 
     void addData(std::vector<GLuint> &data);
+    bool isNull(){return null;}
 };
 
 

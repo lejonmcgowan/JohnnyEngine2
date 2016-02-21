@@ -12,17 +12,17 @@
 Renderable2D::Renderable2D(Shader &vertShader, Shader &fragShader,glm::vec4 color)
         :
         position(glm::vec3()),
-        size(glm::vec3()),
+        size(glm::vec3(5,5,0)),
         color(color)
 {
     shaderProgram = std::make_shared<ShaderProgram>();
     shaderProgram->addShader(vertShader);
     shaderProgram->addShader(fragShader);
 
-    vao = std::make_shared<VertexArray>();;
+    vao = std::make_shared<VertexArray>();
     GLfloat vertices[] =
             {
-                    0, 0, 0,
+                    0,    0,   0,
                     0, size.y, 0,
                     size.x, size.y, 0,
                     size.x, 0, 0
@@ -47,7 +47,7 @@ Renderable2D::Renderable2D(Shader &vertShader, Shader &fragShader,glm::vec4 colo
     colorVBO.addData(colors);
 
     vao->addBuffer(&vertVBO, &ebo, 0);
-    vao->addBuffer(&colorVBO, nullptr, 1);
+    vao->addBuffer(&colorVBO,nullptr, 1);
 
 
 }

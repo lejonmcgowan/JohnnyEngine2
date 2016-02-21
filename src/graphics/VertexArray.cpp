@@ -3,6 +3,7 @@
 //
 
 #include <src/util/DebugGL.h>
+#include <iostream>
 #include "VertexArray.h"
 
 VertexArray::VertexArray()
@@ -13,11 +14,16 @@ VertexArray::VertexArray()
 
 void VertexArray::addBuffer(VertexBuffer *vbo, IndexBuffer *ibo, GLuint index)
 {
-    BufferInfo bufferInfo;
-    bufferInfo.ibo = ibo;
-    bufferInfo.vbo = vbo;
-    bufferInfo.index = index;
+    IndexBuffer* finalIBO;
+    if(ibo == nullptr)
+        finalIBO = &IndexBuffer::nullIBO;
+    else
+        finalIBO = ibo;
+
+        BufferInfo bufferInfo(*vbo,*finalIBO,index);
     buffers.emplace(vbo->getName(), bufferInfo);
+
+    std::cout << "done" << std::endl;
 }
 
 void VertexArray::bind() const
@@ -35,18 +41,21 @@ void VertexArray::unbind() const
 void VertexArray::generate(GLenum drawType)
 {
     bind();
+    checkGLError;
     for (auto buffer: buffers)
     {
         GLuint index = buffer.second.index;
-
         glEnableVertexAttribArray(index);
-        buffer.second.vbo->generate(buffer.second.ibo, drawType);
-        buffer.second.vbo->bind();
+        glVertexAttribPointer(index, buffer.second.vbo.getComponentSize(), GL_FLOAT, GL_FALSE, 0, nullptr);
 
-        glVertexAttribPointer(index, buffer.second.vbo->getComponentSize(), GL_FLOAT, GL_FALSE, 0, nullptr);
+        buffer.second.vbo.bind();
+        buffer.second.vbo.generate(drawType);
+        if (!buffer.second.ibo.isNull())
+        {
+            buffer.second.ibo.bind();
+            buffer.second.ibo.generate(drawType);
+        }
 
-        checkGLError;
-        buffer.second.vbo->unbind();
     }
 
     unbind();
@@ -54,27 +63,27 @@ void VertexArray::generate(GLenum drawType)
     checkGLError;
 }
 
-VertexBuffer* VertexArray::getVBOByName(std::string name) const
+VertexBuffer* VertexArray::getVBOByName(std::string name)
 {
-    VertexBuffer* vbo;
+    VertexBuffer* vbo = nullptr;
     auto mapIter = buffers.find(name);
 
     if(mapIter != buffers.end())
     {
-        vbo = mapIter->second.vbo;
+        vbo = &mapIter->second.vbo;
     }
 
     return vbo;
 }
 
-IndexBuffer * VertexArray::getIBOByName(std::string name) const
+IndexBuffer* VertexArray::getIBOByName(std::string name)
 {
-    IndexBuffer* ibo;
+    IndexBuffer* ibo = nullptr;
     auto mapIter = buffers.find(name);
 
     if(mapIter != buffers.end())
     {
-        ibo = mapIter->second.ibo;
+        ibo = &mapIter->second.ibo;
     }
 
     return ibo;

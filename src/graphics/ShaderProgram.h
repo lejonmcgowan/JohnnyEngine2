@@ -15,6 +15,7 @@
 #include <vector>
 #include <memory>
 #include <iostream>
+#include <algorithm>
 
 #include "Shader.h"
 
@@ -121,15 +122,22 @@ public:
     template<typename T>
     void setUniform(const std::string &name, const T &value)
     {
+        static std::vector<std::string> notFoundList;
         auto foundUniform = uniforms.find(name);
         if (foundUniform != uniforms.end())
         {
             Uniform &uniform = foundUniform->second;
             uniform.setValue(value);
         }
-        else
+        else if(std::find(notFoundList.begin(),notFoundList.end(),name) == notFoundList.end())
         {
             std::cout << "Uniform with given name doesn't exist: " << name << std::endl;
+            std::cout << "list of uniforms" << std::endl;
+            for(auto uniform: uniforms)
+            {
+                std::cout << uniform.second.getName() <<  "of type" << uniform.second.getType() << std::endl;
+            }
+            notFoundList.push_back(name);
         }
     }
 

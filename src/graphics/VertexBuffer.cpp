@@ -13,23 +13,18 @@ VertexBuffer::VertexBuffer(std::string name, GLuint chunkSize)
     checkGLError;
 }
 
-inline void VertexBuffer::bind() const
+void VertexBuffer::bind() const
 {
     glBindBuffer(bufferType, handle);
     checkGLError;
 }
 
-void VertexBuffer::generate(IndexBuffer *ibo, GLenum drawType)
+void VertexBuffer::generate(GLenum drawType)
 {
     if (!configured)
     {
-        bind();
-        //todo: make some option (function parameter or private variable) to change draw type
         glBufferData(bufferType, bufferData.size() * sizeof(GLfloat), &bufferData[0], drawType);
-        if (ibo)
-            ibo->generate(drawType);
-
-        unbind();
+        checkGLError;
 
         configured = true;
     }

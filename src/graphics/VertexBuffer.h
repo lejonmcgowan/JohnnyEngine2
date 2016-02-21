@@ -31,11 +31,11 @@ public:
 
     ~VertexBuffer();
 
-    void generate(IndexBuffer *ibo, GLenum drawType = GL_STATIC_DRAW);
+    void generate(GLenum drawType = GL_STATIC_DRAW);
 
-    inline void bind() const;
+    void bind() const;
 
-    inline void unbind() const;
+    void unbind() const;
 
     GLuint getComponentSize() const
     { return chunkSize; }

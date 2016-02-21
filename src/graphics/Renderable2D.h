@@ -29,7 +29,7 @@ public:
 
     virtual ~Renderable2D();
 
-    inline const VertexArray &getVAO() const
+    inline VertexArray &getVAO()
     { return *vao; }
 
     inline ShaderProgram &getShaderProgram() const

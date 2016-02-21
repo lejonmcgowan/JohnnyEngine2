@@ -18,8 +18,12 @@ class VertexArray
 private:
     struct BufferInfo
     {
-        VertexBuffer *vbo;
-        IndexBuffer *ibo;
+        BufferInfo(VertexBuffer vbo, IndexBuffer ibo, GLuint index):
+        vbo(vbo),
+        ibo(ibo),
+        index(index){}
+        VertexBuffer vbo;
+        IndexBuffer ibo;
         GLuint index;
     };
     GLuint handle;
@@ -29,9 +33,9 @@ public:
 
     void addBuffer(VertexBuffer *vbo, IndexBuffer *ibo, GLuint index);
 
-    VertexBuffer *getVBOByName(std::string name) const;
+    VertexBuffer* getVBOByName(std::string name);
 
-    IndexBuffer * getIBOByName(std::string name)const;
+    IndexBuffer* getIBOByName(std::string name);
 
     void generate(GLenum drawType = GL_STATIC_DRAW);
 

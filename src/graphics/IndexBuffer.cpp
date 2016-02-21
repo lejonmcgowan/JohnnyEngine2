@@ -5,13 +5,15 @@
 #include "util/DebugGL.h"
 #include "IndexBuffer.h"
 
+IndexBuffer IndexBuffer::nullIBO(false);
+
 IndexBuffer::IndexBuffer()
 {
     glGenBuffers(1, &handle);
     checkGLError;
 }
 
-inline void IndexBuffer::bind() const
+void IndexBuffer::bind() const
 {
     glBindBuffer(bufferType, handle);
     checkGLError;
@@ -19,9 +21,9 @@ inline void IndexBuffer::bind() const
 
 void IndexBuffer::generate(GLenum drawType)
 {
+    assert(!null);
     if (!configured)
     {
-        bind();
         //todo: make some option (function parameter or private variable) to change draw type
         glBufferData(bufferType, bufferData.size() * sizeof(GLuint), &bufferData[0], drawType);
         //do NOT unbind EBO. will dissassosiate from VBO
@@ -96,3 +98,17 @@ void IndexBuffer::addData(std::vector<GLuint> &data)
         bufferData.push_back(member);
     makeDirty();
 }
+
+IndexBuffer::IndexBuffer(bool init)
+{
+    if(init)
+    {
+        glGenBuffers(1, &handle);
+        checkGLError;
+    }
+    else
+    {
+        null = true;
+    }
+}
+
