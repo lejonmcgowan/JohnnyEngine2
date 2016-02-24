@@ -13,6 +13,8 @@
 #include "graphics/Window.h"
 #include "util/FileUtils.h"
 
+#define MODE 0
+
 using namespace std;
 
 GLfloat vertices[] = {
@@ -34,10 +36,11 @@ int main()
     Shader vert(GL_VERTEX_SHADER,"shd/red.vert");
     Shader frag(GL_FRAGMENT_SHADER,"shd/red.frag");
 
-//    SimpleRenderer2D renderer;
-//    Renderable2D sprite(vert,frag);
-//
-//    sprite.init();
+#if MODE
+
+    ShaderProgram shaderProgram;
+    shaderProgram.addShader(vert);
+    shaderProgram.addShader(frag);
 
     VertexArray vao;
     vao.addBuffer(new VertexBuffer("vertex",3),new IndexBuffer(),0);
@@ -45,27 +48,33 @@ int main()
     vao.getIBOByName("vertex")->addData(indices);
     vao.generate();
 
-    ShaderProgram shaderProgram;
-    shaderProgram.addShader(vert);
-    shaderProgram.addShader(frag);
+
 
     shaderProgram.linkShaders();
     vao.generate();
+#else
+    SimpleRenderer2D renderer;
+    Renderable2D sprite(vert,frag);
+    sprite.init();
+#endif
+
+
     while (!window.closed())
     {
         window.clear();
         double x, y;
         window.getMousePosition(x, y);
         //std::cout << "(" << x << "," << y << ")" << std::endl;
-        shaderProgram.setUniform("lightPos",glm::vec2(x,window.getHeight() - y));
 
-#if 1
+#if MODE
+        shaderProgram.setUniform("lightPos",glm::vec2(x,window.getHeight() - y));
         shaderProgram.bind();
         shaderProgram.update();
         vao.bind();
             glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         vao.unbind();
 #else
+        sprite.getShaderProgram().setUniform("lightPos",glm::vec2(x,window.getHeight() - y));
         renderer.submit(sprite);
         renderer.flush();
 #endif

@@ -35,21 +35,16 @@ Renderable2D::Renderable2D(Shader &vertShader, Shader &fragShader,glm::vec4 colo
                     color.r, color.b, color.g, color.a,
                     color.r, color.b, color.g, color.a
             };
-    VertexBuffer vertVBO("vertex", 3);
-    VertexBuffer colorVBO("color", 4);
-
-    vertVBO.addData(vertices);
 
     GLushort indices[] = {0, 1, 2, 2, 3, 0};
-    IndexBuffer ebo;
-    ebo.addData(indices);
 
-    colorVBO.addData(colors);
+    vao->addBuffer(new VertexBuffer("vertex", 3),new IndexBuffer(), 0);
+    vao->addBuffer(new VertexBuffer("color", 4),nullptr, 1);
 
-    vao->addBuffer(&vertVBO, &ebo, 0);
-    vao->addBuffer(&colorVBO,nullptr, 1);
+    vao->getVBOByName("vertex")->addData(vertices);
+    vao->getIBOByName("vertex")->addData(indices);
 
-
+    vao->getVBOByName("color")->addData(colors);
 }
 
 Renderable2D::~Renderable2D()
@@ -59,6 +54,6 @@ Renderable2D::~Renderable2D()
 
 void Renderable2D::init()
 {
-    vao->generate();
     shaderProgram->linkShaders();
+    vao->generate();
 }

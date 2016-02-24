@@ -17,14 +17,13 @@ void SimpleRenderer2D::flush()
     {
         glm::mat4 transform;
         Renderable2D& renderable = renderQueue.front();
-        renderable.getVAO().bind();
-
         renderable.getShaderProgram().setUniform("model", glm::translate(transform, renderable.getPosition()));
-
-        unsigned long size = renderable.getVAO().getIBOByName("vertex")->getBufferSize();
-
-        glDrawElements(GL_TRIANGLES, (GLsizei) size, GL_UNSIGNED_SHORT, nullptr);
-        checkGLError;
+        renderable.getShaderProgram().update();
+        renderable.getShaderProgram().bind();
+        renderable.getVAO().bind();
+            unsigned long size = renderable.getVAO().getIBOByName("vertex")->getBufferSize();
+            glDrawElements(GL_TRIANGLES, (GLsizei) size, GL_UNSIGNED_INT, (GLvoid*)0);
+            checkGLError;
         renderable.getVAO().unbind();
 
         renderQueue.pop_front();
