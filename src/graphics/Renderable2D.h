@@ -43,6 +43,8 @@ public:
 
     inline const glm::vec4 &getColor() const
     { return color; }
+
+    void setPosition(float x, float y);
 };
 
 

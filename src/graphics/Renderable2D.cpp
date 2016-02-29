@@ -11,8 +11,8 @@
  * */
 Renderable2D::Renderable2D(Shader &vertShader, Shader &fragShader,glm::vec4 color)
         :
-        position(glm::vec3()),
-        size(glm::vec3(5,5,0)),
+        position(glm::vec3(2,2,0)),
+        size(glm::vec3(1,1,0)),
         color(color)
 {
     shaderProgram = std::make_shared<ShaderProgram>();
@@ -57,3 +57,11 @@ void Renderable2D::init()
     shaderProgram->linkShaders();
     vao->generate();
 }
+
+void Renderable2D::setPosition(float x, float y)
+{
+    position.x = x;
+    position.y = y;
+}
+
+

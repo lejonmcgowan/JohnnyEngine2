@@ -18,6 +18,7 @@ void SimpleRenderer2D::flush()
         glm::mat4 transform;
         Renderable2D& renderable = renderQueue.front();
         renderable.getShaderProgram().setUniform("model", glm::translate(transform, renderable.getPosition()));
+        renderable.getShaderProgram().setUniform("projection", glm::mat4(glm::ortho(0,5,0,5,-1,1)));
         renderable.getShaderProgram().update();
         renderable.getShaderProgram().bind();
         renderable.getVAO().bind();

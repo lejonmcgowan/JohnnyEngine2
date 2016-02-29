@@ -31,7 +31,7 @@ GLuint indices[] = {  // Note that we start from 0!
 int main()
 {
     Window window("Simple Engine!", 800,600);
-    glClearColor(0.1f, 0.8f, 0.1f, 1.0f);
+    glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
 
     Shader vert(GL_VERTEX_SHADER,"shd/red.vert");
     Shader frag(GL_FRAGMENT_SHADER,"shd/red.frag");
@@ -54,8 +54,10 @@ int main()
     vao.generate();
 #else
     SimpleRenderer2D renderer;
-    Renderable2D sprite(vert,frag);
+    Renderable2D sprite(vert,frag), sprite2(vert,frag,glm::vec4(1.0f,0.0f,0.0f,1.0f));
+    sprite2.setPosition(-0.5f,-0.5f);
     sprite.init();
+    sprite2.init();
 #endif
 
 
@@ -74,8 +76,13 @@ int main()
             glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         vao.unbind();
 #else
-        sprite.getShaderProgram().setUniform("lightPos",glm::vec2(x,window.getHeight() - y));
+        sprite.getShaderProgram().setUniform("lightPos",glm::vec2(5.0f * x / (double)window.getWidth(),
+                                                                  5.0f - 5.0f * y / (double)window.getHeight()) - 0.5f);
+
+        sprite2.getShaderProgram().setUniform("lightPos",glm::vec2(5 * x / (double)window.getWidth(),
+                                                                  5.0f - 5.0f * y / (double)window.getHeight()) - 0.5f);
         renderer.submit(sprite);
+        renderer.submit(sprite2);
         renderer.flush();
 #endif
         window.update();
