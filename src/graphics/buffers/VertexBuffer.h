@@ -81,6 +81,8 @@ public:
     };
 
     void addData(std::vector<GLfloat> &data);
+
+    void setData(std::vector<float> vector);
 };
 
 #endif //OGLSIMPLEENGINE_BUFFER_H

@@ -103,3 +103,11 @@ void VertexBuffer::addData(std::vector<float> &data)
         bufferData.push_back(member);
     makeDirty();
 }
+
+void VertexBuffer::setData(std::vector<float>  data)
+{
+    bufferData.clear();
+    addData(data);
+}
+
+
