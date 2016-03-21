@@ -9,7 +9,7 @@ pkg_search_module(GLFW REQUIRED glfw3)
 include_directories(${GLFW_INCLUDE_DIRS})
 
 find_package(GLEW REQUIRED)
-include_directories(GLEW_INCLDUE_DIRS)
+include_directories(${GLEW_INCLDUE_DIRS})
 
 include_directories(${CMAKE_SOURCE_DIR}
                     ${CMAKE_SOURCE_DIR}/src

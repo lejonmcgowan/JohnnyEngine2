@@ -287,6 +287,7 @@ void ShaderProgram::Uniform::setValue(const glm::mat4 &value)
 
 void ShaderProgram::update()
 {
+    bind();
     for (auto uniformMap: uniforms)
     {
         uniformMap.second.commit();

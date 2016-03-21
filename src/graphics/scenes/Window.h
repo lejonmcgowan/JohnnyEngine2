@@ -24,14 +24,14 @@ public:
         MICRO,
         NANO
     };
+
+    void setBackgroundColor(glm::vec4 vec4);
+
 private:
     const char *title;
     int width, height;
     GLFWwindow *window;
 
-    bool keyDowns[GLFW_KEY_LAST] = {0};
-    bool mouseButtonDowns[GLFW_MOUSE_BUTTON_LAST] = {0};
-    glm::dvec2 mousePosition;
     PerformanceDisplay displayType = NONE;
     Timer *windowTimer;
 public:
@@ -44,29 +44,20 @@ public:
     void update();
 
     inline int getWidth() const
-    { return width; }
+    {
+        return width;
+    }
 
     inline int getHeight() const
     { return height; }
 
-    bool isKeyPressed(unsigned int keycode) const;
-
-    bool isMouseButtonPressed(unsigned int button) const;
-
-    void getMousePosition(glm::vec2 &position) const;
-
-    void getMousePosition(double &x, double &y) const;
 
     bool closed() const;
 
 private:
     bool init();
 
-    friend void key_callback(GLFWwindow *window, int key, int scancode, int action, int mods);
-
-    friend void mouse_button_callback(GLFWwindow *window, int button, int action, int mods);
-
-    friend void cursor_position_callback(GLFWwindow *window, double xpos, double ypos);
+    friend class GLFWInput;
 };
 
 #endif //OGLSIMPLEENGINE_WINDOW_H
