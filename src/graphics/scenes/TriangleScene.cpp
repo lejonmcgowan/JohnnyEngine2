@@ -40,6 +40,14 @@ void TriangleScene::step(float timestep)
 
 void TriangleScene::render()
 {
+    if (input.isKeyPressed(GLFW_KEY_K))
+        std::cout << "k is pressed" << std::endl;
+    if (input.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT))
+    {
+        glm::dvec2 position = input.getMousePosition();
+        std::cout << position.x << " " << position.y << std::endl;
+    }
+
     shaderManager.update();
     vao.bind();
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, NULL);
