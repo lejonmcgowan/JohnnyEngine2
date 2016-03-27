@@ -15,6 +15,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/Shader.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/ShaderProgram.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/VertLineRenderer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/scenes/Window.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/scenes/Window.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/scenes/TriangleScene.h" isTestSource="false" />
