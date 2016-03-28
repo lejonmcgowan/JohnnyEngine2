@@ -6,7 +6,7 @@
 #define OGLSIMPLEENGINE_INPUT_H
 
 
-#include <src/graphics/scenes/Window.h>
+#include <scenes/Window.h>
 #include <GLFW/glfw3.h>
 
 #define GLFW_HOLD 2

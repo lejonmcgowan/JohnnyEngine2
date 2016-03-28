@@ -1,0 +1,1 @@
+add_library(scenes Scene.h TriangleScene.cpp TriangleScene.h TextureTriangleScene.cpp TextureTriangleScene.h Window.cpp Window.h)

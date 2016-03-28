@@ -55,7 +55,6 @@ namespace FileUtils
      */
     static std::string readProjectRelativeFile(const std::string &filePath)
     {
-
         std::string result;
         std::ifstream fileSource;
         std::stringstream stringstream;
@@ -80,6 +79,26 @@ namespace FileUtils
         }
         return result;
     }
+
+    static std::string getFullPath(std::string relativePath)
+    {
+
+        //current way to generate path on UNIX: take __FILE__
+        std::string fullPath = __FILE__;
+        //take out actual file name to get current directory
+        fullPath = fullPath.substr(0, fullPath.rfind("/") + 1);
+        //and move up to known project root
+        fullPath += "../../";
+        fullPath += relativePath;
+
+        return fullPath;
+    }
+
+    static std::string getFullPath(const char *relativePath)
+    {
+        return getFullPath(std::string(relativePath));
+    }
+
 }; //namespace FileUtils
 
 #endif //OGLSIMPLEENGINE_FILEUTILS_H

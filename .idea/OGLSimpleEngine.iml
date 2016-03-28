@@ -2,6 +2,8 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexBuffer.h" isTestSource="false" />
@@ -17,11 +19,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/VertLineRenderer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/scenes/Window.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/scenes/Window.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/scenes/TriangleScene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/scenes/Scene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/scenes/TriangleScene.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/FileUtils.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/Color.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/FileUtils.h" isTestSource="false" />
@@ -30,8 +27,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/util/Timer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/DebugGL.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/DebugGL.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Scene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/input/GLFWInput.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/input/GLFWInput.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/input/CMakeLists.txt" isTestSource="false" />
@@ -42,14 +45,14 @@
       <library name="Header Search Paths">
         <CLASSES>
           <root url="file:///usr/include" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
           <root url="file:///usr/local/include" />
         </CLASSES>
         <SOURCES>
           <root url="file:///usr/include" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
           <root url="file:///usr/local/include" />
         </SOURCES>
       </library>

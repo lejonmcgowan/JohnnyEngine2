@@ -13,7 +13,7 @@ void key_callback(GLFWwindow *window, int key, int scancode, int action, int mod
         input->keyDowns[key] = GLFW_PRESS;
 }
 
-Z
+
 void mouse_button_callback(GLFWwindow *window, int button, int action, int mods)
 {
     GLFWInput *input = (GLFWInput *) glfwGetWindowUserPointer(window);

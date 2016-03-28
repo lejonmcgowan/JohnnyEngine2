@@ -8,28 +8,25 @@
 
 #include <GL/glew.h>
 #include <vector>
+#include <src/graphics/shaderManager/ShaderProgram.h>
+#include <src/util/FileUtils.h>
 #include "assert.h"
-
-#define STB_IMAGE_IMPLEMENTATION
-
-#include <stb_image.h>
 
 class Texture
 {
 private:
-    static bool initialized = false;
+    static bool initialized;
     static std::vector<bool> availableTextures;
-    static int texIter = 0;
 
     GLuint handle;
     GLenum type;
     std::string path;
-    unsigned int id;
+    unsigned int texNum;
 public:
 
     unsigned int getNextTexID();
 
-    Texture(GLenum type, std::string path) : type(type), path(path)
+    Texture(GLenum type, std::string path) : type(type), path(FileUtils::getFullPath(path))
     {
         if (!initialized)
             setup();
@@ -45,8 +42,12 @@ public:
                type == GL_TEXTURE_2D_MULTISAMPLE ||
                type == GL_TEXTURE_2D_MULTISAMPLE_ARRAY);
 
-        id = getNextTexID();
+        texNum = getNextTexID();
         glGenTextures(1, &handle);
+    }
+
+    Texture(GLenum type, const char *path) : Texture(type, std::string(path))
+    {
     }
 
     void init();
@@ -58,6 +59,24 @@ public:
     unsigned long getMaxTextures()
     { return availableTextures.size(); }
 
+    void setTexUniform(ShaderProgram &shaderProgam, std::string uniformName);
+
+    unsigned int getTexNum() const
+    {
+        return texNum;
+    }
+
+    GLuint getHandle() const
+    {
+        return handle;
+    }
+
+    GLenum getType() const
+    {
+        return type;
+    }
+
+    ~Texture();
 private:
     void setup();
 };
