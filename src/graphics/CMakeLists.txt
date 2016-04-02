@@ -1,2 +1,10 @@
-add_library(graphics shaderManager/Shader.cpp shaderManager/Shader.h shaderManager/ShaderProgram.cpp shaderManager/ShaderProgram.h buffers/VertexBuffer.cpp buffers/VertexBuffer.h buffers/VertexArray.cpp buffers/VertexArray.h buffers/IndexBuffer.cpp buffers/IndexBuffer.h VertLineRenderer.cpp VertLineRenderer.h texturing/Texture.cpp texturing/Texture.h)
+add_library(graphics shaderManager/Shader.cpp shaderManager/Shader.h
+        shaderManager/ShaderProgram.cpp shaderManager/ShaderProgram.h
+        buffers/VertexBuffer.cpp buffers/VertexBuffer.h
+        buffers/VertexArray.cpp buffers/VertexArray.h
+        buffers/IndexBuffer.cpp buffers/IndexBuffer.h
+        VertLineRenderer.cpp VertLineRenderer.h
+        texturing/Texture.cpp texturing/Texture.h
+        models/Mesh.cpp models/Mesh.h
+        models/Model.cpp models/Model.h)
 target_link_libraries(graphics ${ext_libraries} util)

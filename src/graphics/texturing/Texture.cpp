@@ -12,6 +12,7 @@
 
 bool Texture::initialized = false;
 std::vector<bool> Texture::availableTextures;
+std::map<std::string, std::shared_ptr<Texture>> Texture::texturePool;
 
 void Texture::setup()
 {
@@ -35,14 +36,20 @@ unsigned int Texture::getNextTexID()
 
 void Texture::init()
 {
-    int width, height, channelPerPixel;
-    unsigned char *data = stbi_load(path.c_str(), &width, &height, &channelPerPixel, 0);
-    bind();
-    glTexImage2D(type, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
-    checkGLError;
-    glGenerateMipmap(GL_TEXTURE_2D);
-    unbind();
-    stbi_image_free(data);
+    static bool initialized;
+    if (!initialized)
+    {
+        int width, height, channelPerPixel;
+        unsigned char *data = stbi_load(path.c_str(), &width, &height, &channelPerPixel, 0);
+        bind();
+        glTexImage2D(type, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        checkGLError;
+        glGenerateMipmap(GL_TEXTURE_2D);
+        unbind();
+        stbi_image_free(data);
+        initialized = true;
+    }
+
 }
 
 void Texture::unbind()
@@ -57,6 +64,8 @@ void Texture::bind()
 
 void Texture::setTexUniform(ShaderProgram &shaderProgam, std::string uniformName)
 {
+    if (uniformName.empty());
+    uniformName = name;
     shaderProgam.bind();
     glActiveTexture(GL_TEXTURE0 + texNum);
     bind();

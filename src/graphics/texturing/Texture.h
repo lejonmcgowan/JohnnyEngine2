@@ -17,16 +17,20 @@ class Texture
 private:
     static bool initialized;
     static std::vector<bool> availableTextures;
+    static std::map<std::string, std::shared_ptr<Texture>> texturePool;
 
     GLuint handle;
     GLenum type;
     std::string path;
     unsigned int texNum;
+    std::string name;
 public:
 
     unsigned int getNextTexID();
 
-    Texture(GLenum type, std::string path) : type(type), path(FileUtils::getFullPath(path))
+    Texture(std::string name, GLenum type, std::string path) : name(name),
+                                                               type(type),
+                                                               path(FileUtils::getFullPath(path))
     {
         if (!initialized)
             setup();
@@ -44,9 +48,10 @@ public:
 
         texNum = getNextTexID();
         glGenTextures(1, &handle);
+        texturePool[name] = std::make_shared<Texture>(*this);
     }
 
-    Texture(GLenum type, const char *path) : Texture(type, std::string(path))
+    Texture(std::string name, GLenum type, const char *path) : Texture(name, type, std::string(path))
     {
     }
 
@@ -59,7 +64,7 @@ public:
     unsigned long getMaxTextures()
     { return availableTextures.size(); }
 
-    void setTexUniform(ShaderProgram &shaderProgam, std::string uniformName);
+    void setTexUniform(ShaderProgram &shaderProgam, std::string uniformName = "");
 
     unsigned int getTexNum() const
     {
@@ -77,6 +82,31 @@ public:
     }
 
     ~Texture();
+
+    static std::shared_ptr<Texture> getTextureByName(std::string name)
+    {
+        std::shared_ptr<Texture> texture = nullptr;
+        if (texturePool.find(name) != texturePool.end())
+        {
+            texture = texturePool[name];
+        }
+
+        return texture;
+    }
+
+    static std::shared_ptr<Texture> getTextureByPath(std::string path)
+    {
+        path = FileUtils::getFullPath(path);
+        std::shared_ptr<Texture> finalTexture = nullptr;
+        for (auto texture: texturePool)
+        {
+            if (texture.second->path == path)
+                finalTexture = texture.second;
+        }
+
+        return finalTexture;
+    }
+
 private:
     void setup();
 };

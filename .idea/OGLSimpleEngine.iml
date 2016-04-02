@@ -4,18 +4,22 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexBuffer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexBuffer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexArray.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexArray.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexArray.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/VertLineRenderer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/ShaderProgram.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/Shader.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/Shader.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/ShaderProgram.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Mesh.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Model.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Mesh.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Model.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/VertLineRenderer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.cpp" isTestSource="false" />
@@ -28,10 +32,10 @@
       <sourceFolder url="file://$MODULE_DIR$/src/util/DebugGL.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/DebugGL.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/Scene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.cpp" isTestSource="false" />
@@ -39,6 +43,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/input/GLFWInput.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/input/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/cmake/FindASSIMP.cmake" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">

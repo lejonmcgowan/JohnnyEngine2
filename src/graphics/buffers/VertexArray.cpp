@@ -12,7 +12,7 @@ VertexArray::VertexArray()
     checkGLError;
 }
 
-void VertexArray::addBuffer(VertexBuffer *vbo, IndexBuffer *ibo, GLuint index)
+void VertexArray::addBuffer(GLuint index, VertexBuffer *vbo, IndexBuffer *ibo)
 {
     IndexBuffer* finalIBO;
     if(ibo == nullptr)

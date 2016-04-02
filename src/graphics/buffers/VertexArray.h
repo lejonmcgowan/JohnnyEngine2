@@ -32,7 +32,7 @@ private:
 public:
     VertexArray();
 
-    void addBuffer(VertexBuffer *vbo, IndexBuffer *ibo, GLuint index);
+    void addBuffer(GLuint index, VertexBuffer *vbo, IndexBuffer *ibo = nullptr);
 
     VertexBuffer* getVBOByName(std::string name);
 
