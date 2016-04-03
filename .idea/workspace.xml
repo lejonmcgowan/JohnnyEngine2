@@ -48,30 +48,17 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae2de107-f733-4304-8fca-39fa140d96b7" name="Default" comment="starting of the implementation of textures&#10;&#10;">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shd/textureShader.frag" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shd/textureShader.vert" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphics/scenes/Scene.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphics/scenes/TriangleScene.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphics/scenes/TriangleScene.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphics/scenes/Window.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/graphics/scenes/Window.h" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenes/CMakeLists.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenes/TextureTriangleScene.cpp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenes/TextureTriangleScene.h" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/OGLSimpleEngine.iml" afterPath="$PROJECT_DIR$/.idea/OGLSimpleEngine.iml" />
+    <list default="true" id="ae2de107-f733-4304-8fca-39fa140d96b7" name="Default" comment="model Loading is compiling. Now to get a model and test it...">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graphics/models/Mesh.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graphics/models/Mesh.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graphics/models/Model.cpp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/graphics/models/Model.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenes/Scene.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenes/TriangleScene.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenes/TriangleScene.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenes/Window.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/scenes/Window.h" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CMakeLists.txt" afterPath="$PROJECT_DIR$/src/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphics/CMakeLists.txt" afterPath="$PROJECT_DIR$/src/graphics/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphics/buffers/VertexArray.cpp" afterPath="$PROJECT_DIR$/src/graphics/buffers/VertexArray.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphics/buffers/VertexArray.h" afterPath="$PROJECT_DIR$/src/graphics/buffers/VertexArray.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphics/texturing/Texture.cpp" afterPath="$PROJECT_DIR$/src/graphics/texturing/Texture.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graphics/texturing/Texture.h" afterPath="$PROJECT_DIR$/src/graphics/texturing/Texture.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input/GLFWInput.cpp" afterPath="$PROJECT_DIR$/src/input/GLFWInput.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/input/GLFWInput.h" afterPath="$PROJECT_DIR$/src/input/GLFWInput.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.cpp" afterPath="$PROJECT_DIR$/src/main.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/util/FileUtils.h" afterPath="$PROJECT_DIR$/src/util/FileUtils.h" />
     </list>
     <ignored path="OGLSimpleEngine.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,27 +79,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Model.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/graphics/models/Model.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="types.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ext/include/assimp/types.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="249" column="7" selection-start-line="249" selection-start-column="7" selection-end-line="249" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Model.h" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Model.h" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graphics/models/Model.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
@@ -151,7 +118,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
               <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding />
+              <folding>
+                <marker date="1459568917575" expanded="true" signature="351:540" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,8 +129,10 @@
         <entry file="file://$PROJECT_DIR$/src/scenes/TextureTriangleScene.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
-              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-              <folding />
+              <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+              <folding>
+                <marker date="1459568917599" expanded="true" signature="368:372" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -193,7 +164,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
               <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-              <folding />
+              <folding>
+                <marker date="1459568917665" expanded="true" signature="276:2719" placeholder="{...}" />
+                <marker date="1459568917665" expanded="true" signature="837:1481" placeholder="{...}" />
+                <marker date="1459568917665" expanded="true" signature="1589:1596" placeholder="{...}" />
+                <marker date="1459568917665" expanded="true" signature="1868:1898" placeholder="{...}" />
+                <marker date="1459568917665" expanded="true" signature="1933:1963" placeholder="{...}" />
+                <marker date="1459568917665" expanded="true" signature="1996:2024" placeholder="{...}" />
+                <marker date="1459568917665" expanded="true" signature="2118:2320" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -274,10 +253,10 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="91" />
-    <option name="y" value="27" />
-    <option name="width" value="1829" />
-    <option name="height" value="1173" />
+    <option name="x" value="81" />
+    <option name="y" value="24" />
+    <option name="width" value="1839" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -436,6 +415,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -730,19 +710,26 @@
       <option name="project" value="LOCAL" />
       <updated>1459071829844</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="model Loading is compiling. Now to get a model and test it...">
+      <created>1459568918787</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1459568918787</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="91" y="27" width="1829" height="1173" extended-state="6" />
+    <frame x="81" y="24" width="1839" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23892838" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23762915" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33030027" sideWeight="0.8911974" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24203822" sideWeight="0.49342105" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33030027" sideWeight="0.8911974" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2413793" sideWeight="0.49102774" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33030027" sideWeight="0.108802624" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2413793" sideWeight="0.5089723" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5986056" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33484986" sideWeight="0.49561402" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24900962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -783,7 +770,8 @@
     <MESSAGE value="Working! shaded, EBO rectangle + a refactored buffer accaptance." />
     <MESSAGE value="Scene structure inplace. Shaders and buffers still work. &#10;Next Goal: viewport management." />
     <MESSAGE value="starting of the implementation of textures&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting of the implementation of textures&#10;&#10;" />
+    <MESSAGE value="model Loading is compiling. Now to get a model and test it..." />
+    <option name="LAST_COMMIT_MESSAGE" value="model Loading is compiling. Now to get a model and test it..." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -972,6 +960,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1004,6 +993,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,27 +1039,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ext/include/assimp/types.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="249" column="7" selection-start-line="249" selection-start-column="7" selection-end-line="249" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graphics/models/Model.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/graphics/texturing/Texture.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding />
+          <folding>
+            <marker date="1459568917575" expanded="true" signature="351:540" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1086,8 +1062,10 @@
     <entry file="file://$PROJECT_DIR$/src/scenes/TextureTriangleScene.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-          <folding />
+          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
+          <folding>
+            <marker date="1459568917599" expanded="true" signature="368:372" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1103,7 +1081,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="50" column="55" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
-          <folding />
+          <folding>
+            <marker date="1459568917665" expanded="true" signature="276:2719" placeholder="{...}" />
+            <marker date="1459568917665" expanded="true" signature="837:1481" placeholder="{...}" />
+            <marker date="1459568917665" expanded="true" signature="1589:1596" placeholder="{...}" />
+            <marker date="1459568917665" expanded="true" signature="1868:1898" placeholder="{...}" />
+            <marker date="1459568917665" expanded="true" signature="1933:1963" placeholder="{...}" />
+            <marker date="1459568917665" expanded="true" signature="1996:2024" placeholder="{...}" />
+            <marker date="1459568917665" expanded="true" signature="2118:2320" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1129,8 +1115,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graphics/models/Model.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
+        <state relative-caret-position="1018">
           <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ext/include/assimp/types.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="248" column="1" selection-start-line="248" selection-start-column="1" selection-end-line="248" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graphics/models/Model.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
