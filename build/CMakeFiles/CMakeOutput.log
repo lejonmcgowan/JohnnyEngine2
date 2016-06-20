@@ -28,41 +28,41 @@ The CXX compiler identification is GNU, found in "/home/lejonmcgowan/Dropbox/pro
 Determining if the C compiler works passed with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec4260798774/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4260798774.dir/build.make CMakeFiles/cmTryCompileExec4260798774.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec148539938/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec148539938.dir/build.make CMakeFiles/cmTryCompileExec148539938.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec4260798774.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4260798774.dir/testCCompiler.c.o   -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec4260798774
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4260798774.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec4260798774.dir/testCCompiler.c.o  -o cmTryCompileExec4260798774 -rdynamic 
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec148539938.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec148539938.dir/testCCompiler.c.o   -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec148539938
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec148539938.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec148539938.dir/testCCompiler.c.o  -o cmTryCompileExec148539938 -rdynamic 
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec4257675889/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4257675889.dir/build.make CMakeFiles/cmTryCompileExec4257675889.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2778451156/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2778451156.dir/build.make CMakeFiles/cmTryCompileExec2778451156.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.2/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec4257675889
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4257675889.dir/link.txt --verbose=1
-/usr/bin/cc      -v CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec4257675889 -rdynamic  
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2778451156
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2778451156.dir/link.txt --verbose=1
+/usr/bin/cc      -v CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2778451156 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
 Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) 
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec4257675889' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec4257675889 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2778451156' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2778451156 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
@@ -70,26 +70,26 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec4257675889/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec4257675889.dir/build.make CMakeFiles/cmTryCompileExec4257675889.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2778451156/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2778451156.dir/build.make CMakeFiles/cmTryCompileExec2778451156.dir/build]
   ignore line: [make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o   -c /usr/local/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec4257675889]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4257675889.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec4257675889 -rdynamic  ]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.2/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2778451156]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2778451156.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc      -v CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2778451156 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
   ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec4257675889' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec4257675889 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2778451156' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec2778451156 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -103,7 +103,7 @@ Parsed C implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec4257675889] ==> ignore
+    arg [cmTryCompileExec2778451156] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -115,7 +115,7 @@ Parsed C implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec4257675889.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec2778451156.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -149,15 +149,15 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2763067161/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2763067161.dir/build.make CMakeFiles/cmTryCompileExec2763067161.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1869752653/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1869752653.dir/build.make CMakeFiles/cmTryCompileExec1869752653.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2763067161.dir/feature_tests.c.o
-/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec2763067161.dir/feature_tests.c.o   -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec2763067161
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2763067161.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec2763067161.dir/feature_tests.c.o  -o cmTryCompileExec2763067161 -rdynamic 
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1869752653.dir/feature_tests.c.o
+/usr/bin/cc   -std=c11 -o CMakeFiles/cmTryCompileExec1869752653.dir/feature_tests.c.o   -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec1869752653
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1869752653.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1869752653.dir/feature_tests.c.o  -o cmTryCompileExec1869752653 -rdynamic 
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
@@ -170,15 +170,15 @@ make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec239554917/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec239554917.dir/build.make CMakeFiles/cmTryCompileExec239554917.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3880918061/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3880918061.dir/build.make CMakeFiles/cmTryCompileExec3880918061.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec239554917.dir/feature_tests.c.o
-/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec239554917.dir/feature_tests.c.o   -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec239554917
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec239554917.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec239554917.dir/feature_tests.c.o  -o cmTryCompileExec239554917 -rdynamic 
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3880918061.dir/feature_tests.c.o
+/usr/bin/cc   -std=c99 -o CMakeFiles/cmTryCompileExec3880918061.dir/feature_tests.c.o   -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec3880918061
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3880918061.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3880918061.dir/feature_tests.c.o  -o cmTryCompileExec3880918061 -rdynamic 
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
@@ -191,15 +191,15 @@ make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec631559786/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec631559786.dir/build.make CMakeFiles/cmTryCompileExec631559786.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec509073603/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec509073603.dir/build.make CMakeFiles/cmTryCompileExec509073603.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec631559786.dir/feature_tests.c.o
-/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec631559786.dir/feature_tests.c.o   -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.c
-Linking C executable cmTryCompileExec631559786
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec631559786.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec631559786.dir/feature_tests.c.o  -o cmTryCompileExec631559786 -rdynamic 
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec509073603.dir/feature_tests.c.o
+/usr/bin/cc   -std=c90 -o CMakeFiles/cmTryCompileExec509073603.dir/feature_tests.c.o   -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.c
+Linking C executable cmTryCompileExec509073603
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec509073603.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec509073603.dir/feature_tests.c.o  -o cmTryCompileExec509073603 -rdynamic 
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
@@ -210,41 +210,41 @@ make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/
 Determining if the CXX compiler works passed with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3927287605/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3927287605.dir/build.make CMakeFiles/cmTryCompileExec3927287605.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3773400823/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3773400823.dir/build.make CMakeFiles/cmTryCompileExec3773400823.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3927287605.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3927287605.dir/testCXXCompiler.cxx.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec3927287605
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3927287605.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec3927287605.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3927287605 -rdynamic 
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3773400823.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3773400823.dir/testCXXCompiler.cxx.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3773400823
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3773400823.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3773400823.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3773400823 -rdynamic 
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1349276221/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1349276221.dir/build.make CMakeFiles/cmTryCompileExec1349276221.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec355161064/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec355161064.dir/build.make CMakeFiles/cmTryCompileExec355161064.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec1349276221
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1349276221.dir/link.txt --verbose=1
-/usr/bin/c++       -v CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1349276221 -rdynamic  
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec355161064
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec355161064.dir/link.txt --verbose=1
+/usr/bin/c++       -v CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec355161064 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper
 Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
 Thread model: posix
-gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) 
+gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1349276221' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1349276221 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec355161064' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec355161064 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
@@ -252,26 +252,26 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec1349276221/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1349276221.dir/build.make CMakeFiles/cmTryCompileExec1349276221.dir/build]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec355161064/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec355161064.dir/build.make CMakeFiles/cmTryCompileExec355161064.dir/build]
   ignore line: [make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec1349276221]
-  ignore line: [/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1349276221.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1349276221 -rdynamic  ]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.2/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec355161064]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec355161064.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++       -v CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec355161064 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.8/lto-wrapper]
   ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.8.4-2ubuntu1~14.04.3' --with-bugurl=file:///usr/share/doc/gcc-4.8/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.8 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.8 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-libmudflap --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.8-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.8-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04) ]
+  ignore line: [gcc version 4.8.4 (Ubuntu 4.8.4-2ubuntu1~14.04.3) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/4.8/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1349276221' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec1349276221 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec355161064' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/4.8/collect2 --sysroot=/ --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -z relro -o cmTryCompileExec355161064 /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/4.8 -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../.. CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/4.8/crtend.o /usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/collect2] ==> ignore
     arg [--sysroot=/] ==> ignore
     arg [--build-id] ==> ignore
@@ -285,7 +285,7 @@ Parsed CXX implicit link information from above output:
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec1349276221] ==> ignore
+    arg [cmTryCompileExec355161064] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/4.8/crtbegin.o] ==> ignore
@@ -297,7 +297,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/4.8/../../..]
-    arg [CMakeFiles/cmTryCompileExec1349276221.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec355161064.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -329,15 +329,15 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1859841664/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1859841664.dir/build.make CMakeFiles/cmTryCompileExec1859841664.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1497104345/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1497104345.dir/build.make CMakeFiles/cmTryCompileExec1497104345.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1859841664.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTryCompileExec1859841664.dir/feature_tests.cxx.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec1859841664
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1859841664.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec1859841664.dir/feature_tests.cxx.o  -o cmTryCompileExec1859841664 -rdynamic 
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1497104345.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++1y -o CMakeFiles/cmTryCompileExec1497104345.dir/feature_tests.cxx.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec1497104345
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1497104345.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec1497104345.dir/feature_tests.cxx.o  -o cmTryCompileExec1497104345 -rdynamic 
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
@@ -403,15 +403,15 @@ make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec907548944/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec907548944.dir/build.make CMakeFiles/cmTryCompileExec907548944.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1913812304/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1913812304.dir/build.make CMakeFiles/cmTryCompileExec1913812304.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec907548944.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec907548944.dir/feature_tests.cxx.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec907548944
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec907548944.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec907548944.dir/feature_tests.cxx.o  -o cmTryCompileExec907548944 -rdynamic 
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1913812304.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++11 -o CMakeFiles/cmTryCompileExec1913812304.dir/feature_tests.cxx.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec1913812304
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1913812304.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec1913812304.dir/feature_tests.cxx.o  -o cmTryCompileExec1913812304 -rdynamic 
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 
@@ -477,15 +477,15 @@ make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1862166102/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1862166102.dir/build.make CMakeFiles/cmTryCompileExec1862166102.dir/build
+Run Build Command:"/usr/bin/make" "cmTryCompileExec282515045/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec282515045.dir/build.make CMakeFiles/cmTryCompileExec282515045.dir/build
 make[1]: Entering directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
-/usr/local/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1862166102.dir/feature_tests.cxx.o
-/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec1862166102.dir/feature_tests.cxx.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.cxx
-Linking CXX executable cmTryCompileExec1862166102
-/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1862166102.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec1862166102.dir/feature_tests.cxx.o  -o cmTryCompileExec1862166102 -rdynamic 
+/usr/bin/cmake -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec282515045.dir/feature_tests.cxx.o
+/usr/bin/c++    -std=c++98 -o CMakeFiles/cmTryCompileExec282515045.dir/feature_tests.cxx.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTryCompileExec282515045
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec282515045.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec282515045.dir/feature_tests.cxx.o  -o cmTryCompileExec282515045 -rdynamic 
 make[1]: Leaving directory `/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles/CMakeTmp'
 
 

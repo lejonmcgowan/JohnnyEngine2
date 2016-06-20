@@ -58,17 +58,23 @@ CMAKE_BINARY_DIR = /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build
 # Convenience name for "all" pass in the directory.
 src/all: src/CMakeFiles/OGLSimpleEngine.dir/all
 src/all: src/util/all
+src/all: src/input/all
+src/all: src/scenes/all
 src/all: src/graphics/all
 .PHONY : src/all
 
 # Convenience name for "clean" pass in the directory.
 src/clean: src/CMakeFiles/OGLSimpleEngine.dir/clean
 src/clean: src/util/clean
+src/clean: src/input/clean
+src/clean: src/scenes/clean
 src/clean: src/graphics/clean
 .PHONY : src/clean
 
 # Convenience name for "preinstall" pass in the directory.
 src/preinstall: src/util/preinstall
+src/preinstall: src/input/preinstall
+src/preinstall: src/scenes/preinstall
 src/preinstall: src/graphics/preinstall
 .PHONY : src/preinstall
 
@@ -77,6 +83,8 @@ src/preinstall: src/graphics/preinstall
 
 # All Build rule for target.
 src/CMakeFiles/OGLSimpleEngine.dir/all: src/util/CMakeFiles/util.dir/all
+src/CMakeFiles/OGLSimpleEngine.dir/all: src/input/CMakeFiles/input.dir/all
+src/CMakeFiles/OGLSimpleEngine.dir/all: src/scenes/CMakeFiles/scenes.dir/all
 src/CMakeFiles/OGLSimpleEngine.dir/all: src/graphics/CMakeFiles/graphics.dir/all
 	$(MAKE) -f src/CMakeFiles/OGLSimpleEngine.dir/build.make src/CMakeFiles/OGLSimpleEngine.dir/depend
 	$(MAKE) -f src/CMakeFiles/OGLSimpleEngine.dir/build.make src/CMakeFiles/OGLSimpleEngine.dir/build
@@ -90,7 +98,7 @@ all: src/CMakeFiles/OGLSimpleEngine.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/OGLSimpleEngine.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/OGLSimpleEngine.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/OGLSimpleEngine.dir/rule
@@ -130,7 +138,7 @@ src/util/preinstall:
 src/util/CMakeFiles/util.dir/all:
 	$(MAKE) -f src/util/CMakeFiles/util.dir/build.make src/util/CMakeFiles/util.dir/depend
 	$(MAKE) -f src/util/CMakeFiles/util.dir/build.make src/util/CMakeFiles/util.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles  9 10 11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles  15 16 17
 	@echo "Built target util"
 .PHONY : src/util/CMakeFiles/util.dir/all
 
@@ -159,6 +167,107 @@ clean: src/util/CMakeFiles/util.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory src/input
+
+# Convenience name for "all" pass in the directory.
+src/input/all: src/input/CMakeFiles/input.dir/all
+.PHONY : src/input/all
+
+# Convenience name for "clean" pass in the directory.
+src/input/clean: src/input/CMakeFiles/input.dir/clean
+.PHONY : src/input/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/input/preinstall:
+.PHONY : src/input/preinstall
+
+#=============================================================================
+# Target rules for target src/input/CMakeFiles/input.dir
+
+# All Build rule for target.
+src/input/CMakeFiles/input.dir/all:
+	$(MAKE) -f src/input/CMakeFiles/input.dir/build.make src/input/CMakeFiles/input.dir/depend
+	$(MAKE) -f src/input/CMakeFiles/input.dir/build.make src/input/CMakeFiles/input.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles  11
+	@echo "Built target input"
+.PHONY : src/input/CMakeFiles/input.dir/all
+
+# Include target in all.
+all: src/input/CMakeFiles/input.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/input/CMakeFiles/input.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 src/input/CMakeFiles/input.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 0
+.PHONY : src/input/CMakeFiles/input.dir/rule
+
+# Convenience name for target.
+input: src/input/CMakeFiles/input.dir/rule
+.PHONY : input
+
+# clean rule for target.
+src/input/CMakeFiles/input.dir/clean:
+	$(MAKE) -f src/input/CMakeFiles/input.dir/build.make src/input/CMakeFiles/input.dir/clean
+.PHONY : src/input/CMakeFiles/input.dir/clean
+
+# clean rule for target.
+clean: src/input/CMakeFiles/input.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory src/scenes
+
+# Convenience name for "all" pass in the directory.
+src/scenes/all: src/scenes/CMakeFiles/scenes.dir/all
+.PHONY : src/scenes/all
+
+# Convenience name for "clean" pass in the directory.
+src/scenes/clean: src/scenes/CMakeFiles/scenes.dir/clean
+.PHONY : src/scenes/clean
+
+# Convenience name for "preinstall" pass in the directory.
+src/scenes/preinstall:
+.PHONY : src/scenes/preinstall
+
+#=============================================================================
+# Target rules for target src/scenes/CMakeFiles/scenes.dir
+
+# All Build rule for target.
+src/scenes/CMakeFiles/scenes.dir/all: src/util/CMakeFiles/util.dir/all
+src/scenes/CMakeFiles/scenes.dir/all: src/graphics/CMakeFiles/graphics.dir/all
+	$(MAKE) -f src/scenes/CMakeFiles/scenes.dir/build.make src/scenes/CMakeFiles/scenes.dir/depend
+	$(MAKE) -f src/scenes/CMakeFiles/scenes.dir/build.make src/scenes/CMakeFiles/scenes.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles  12 13 14
+	@echo "Built target scenes"
+.PHONY : src/scenes/CMakeFiles/scenes.dir/all
+
+# Include target in all.
+all: src/scenes/CMakeFiles/scenes.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+src/scenes/CMakeFiles/scenes.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 15
+	$(MAKE) -f CMakeFiles/Makefile2 src/scenes/CMakeFiles/scenes.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 0
+.PHONY : src/scenes/CMakeFiles/scenes.dir/rule
+
+# Convenience name for target.
+scenes: src/scenes/CMakeFiles/scenes.dir/rule
+.PHONY : scenes
+
+# clean rule for target.
+src/scenes/CMakeFiles/scenes.dir/clean:
+	$(MAKE) -f src/scenes/CMakeFiles/scenes.dir/build.make src/scenes/CMakeFiles/scenes.dir/clean
+.PHONY : src/scenes/CMakeFiles/scenes.dir/clean
+
+# clean rule for target.
+clean: src/scenes/CMakeFiles/scenes.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Directory level rules for directory src/graphics
 
 # Convenience name for "all" pass in the directory.
@@ -177,10 +286,10 @@ src/graphics/preinstall:
 # Target rules for target src/graphics/CMakeFiles/graphics.dir
 
 # All Build rule for target.
-src/graphics/CMakeFiles/graphics.dir/all:
+src/graphics/CMakeFiles/graphics.dir/all: src/util/CMakeFiles/util.dir/all
 	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/depend
 	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles  2 3 4 5 6 7 8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles  2 3 4 5 6 7 8 9 10
 	@echo "Built target graphics"
 .PHONY : src/graphics/CMakeFiles/graphics.dir/all
 
@@ -190,7 +299,7 @@ all: src/graphics/CMakeFiles/graphics.dir/all
 
 # Build rule for subdir invocation for target.
 src/graphics/CMakeFiles/graphics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 src/graphics/CMakeFiles/graphics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles 0
 .PHONY : src/graphics/CMakeFiles/graphics.dir/rule

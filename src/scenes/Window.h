@@ -7,7 +7,6 @@
 
 #include <iostream>
 #include <GL/glew.h>
-#include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 
 #include "util/Timer.h"
@@ -26,38 +25,32 @@ public:
     };
 
     void setBackgroundColor(glm::vec4 vec4);
-
 private:
-    const char *title;
-    int width, height;
-    GLFWwindow *window;
-
     PerformanceDisplay displayType = NONE;
     Timer *windowTimer;
+protected:
+    int width, height;
+    const char *title;
+
+    virtual bool init() = 0;
 public:
     Window(const char *name, int width, int height);
 
-    ~Window();
-
+    virtual ~Window();
     void clear() const;
 
-    void update();
+    virtual void update() = 0;
+
+    virtual bool closed() const = 0;
+
 
     inline int getWidth() const
-    {
-        return width;
-    }
+    { return width; }
 
     inline int getHeight() const
     { return height; }
-
-
-    bool closed() const;
-
 private:
-    bool init();
-
-    friend class GLFWInput;
+    friend class Keyboard;
 };
 
 #endif //OGLSIMPLEENGINE_WINDOW_H

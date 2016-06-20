@@ -11,8 +11,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.2.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.2.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.2.2/CMakeSystem.cmake"
+        "../cmake/FindASSIMP.cmake"
   "../src/CMakeLists.txt"
   "../src/graphics/CMakeLists.txt"
+        "../src/input/CMakeLists.txt"
+        "../src/scenes/CMakeLists.txt"
   "../src/util/CMakeLists.txt"
   "/usr/share/cmake-3.2/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.2/Modules/CMakeCXXInformation.cmake"
@@ -29,7 +32,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake"
   "/usr/share/cmake-3.2/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.2/Modules/FindPkgConfig.cmake"
-  "/usr/share/cmake-3.2/Modules/MultiArchCross.cmake"
   "/usr/share/cmake-3.2/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.2/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.2/Modules/Platform/Linux-GNU.cmake"
@@ -48,6 +50,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/util/CMakeFiles/CMakeDirectoryInformation.cmake"
+        "src/input/CMakeFiles/CMakeDirectoryInformation.cmake"
+        "src/scenes/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/graphics/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
@@ -55,5 +59,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/OGLSimpleEngine.dir/DependInfo.cmake"
   "src/util/CMakeFiles/util.dir/DependInfo.cmake"
+        "src/input/CMakeFiles/input.dir/DependInfo.cmake"
+        "src/scenes/CMakeFiles/scenes.dir/DependInfo.cmake"
   "src/graphics/CMakeFiles/graphics.dir/DependInfo.cmake"
   )

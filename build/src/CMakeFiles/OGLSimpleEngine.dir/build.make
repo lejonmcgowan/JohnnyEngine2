@@ -83,12 +83,17 @@ src/OGLSimpleEngine: src/CMakeFiles/OGLSimpleEngine.dir/main.cpp.o
 src/OGLSimpleEngine: src/CMakeFiles/OGLSimpleEngine.dir/build.make
 src/OGLSimpleEngine: /usr/lib/x86_64-linux-gnu/libGLU.so
 src/OGLSimpleEngine: /usr/lib/x86_64-linux-gnu/libGL.so
-src/OGLSimpleEngine: /usr/lib/x86_64-linux-gnu/libGLEW.so
+src/OGLSimpleEngine: /usr/lib64/libGLEW.so
+src/OGLSimpleEngine: /usr/local/lib/libassimp.so
 src/OGLSimpleEngine: src/util/libutil.a
+src/OGLSimpleEngine: src/input/libinput.a
+src/OGLSimpleEngine: src/scenes/libscenes.a
 src/OGLSimpleEngine: src/graphics/libgraphics.a
 src/OGLSimpleEngine: /usr/lib/x86_64-linux-gnu/libGLU.so
 src/OGLSimpleEngine: /usr/lib/x86_64-linux-gnu/libGL.so
-src/OGLSimpleEngine: /usr/lib/x86_64-linux-gnu/libGLEW.so
+src/OGLSimpleEngine: /usr/lib64/libGLEW.so
+src/OGLSimpleEngine: /usr/local/lib/libassimp.so
+src/OGLSimpleEngine: src/util/libutil.a
 src/OGLSimpleEngine: src/CMakeFiles/OGLSimpleEngine.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable OGLSimpleEngine"
 	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OGLSimpleEngine.dir/link.txt --verbose=$(VERBOSE)

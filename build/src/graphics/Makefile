@@ -115,173 +115,221 @@ graphics/fast:
 	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/build
 .PHONY : graphics/fast
 
-Buffer.o: Buffer.cpp.o
-.PHONY : Buffer.o
+VertLineRenderer.o: VertLineRenderer.cpp.o
+.PHONY : VertLineRenderer.o
 
 # target to build an object file
-Buffer.cpp.o:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o
-.PHONY : Buffer.cpp.o
+VertLineRenderer.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o
+.PHONY : VertLineRenderer.cpp.o
 
-Buffer.i: Buffer.cpp.i
-.PHONY : Buffer.i
+VertLineRenderer.i: VertLineRenderer.cpp.i
+.PHONY : VertLineRenderer.i
 
 # target to preprocess a source file
-Buffer.cpp.i:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.i
-.PHONY : Buffer.cpp.i
+VertLineRenderer.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.i
+.PHONY : VertLineRenderer.cpp.i
 
-Buffer.s: Buffer.cpp.s
-.PHONY : Buffer.s
+VertLineRenderer.s: VertLineRenderer.cpp.s
+.PHONY : VertLineRenderer.s
 
 # target to generate assembly for a file
-Buffer.cpp.s:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.s
-.PHONY : Buffer.cpp.s
+VertLineRenderer.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.s
+.PHONY : VertLineRenderer.cpp.s
 
-Renderable2D.o: Renderable2D.cpp.o
-.PHONY : Renderable2D.o
+buffers/IndexBuffer.o: buffers/IndexBuffer.cpp.o
+.PHONY : buffers/IndexBuffer.o
 
 # target to build an object file
-Renderable2D.cpp.o:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o
-.PHONY : Renderable2D.cpp.o
+buffers/IndexBuffer.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o
+.PHONY : buffers/IndexBuffer.cpp.o
 
-Renderable2D.i: Renderable2D.cpp.i
-.PHONY : Renderable2D.i
+buffers/IndexBuffer.i: buffers/IndexBuffer.cpp.i
+.PHONY : buffers/IndexBuffer.i
 
 # target to preprocess a source file
-Renderable2D.cpp.i:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.i
-.PHONY : Renderable2D.cpp.i
+buffers/IndexBuffer.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.i
+.PHONY : buffers/IndexBuffer.cpp.i
 
-Renderable2D.s: Renderable2D.cpp.s
-.PHONY : Renderable2D.s
+buffers/IndexBuffer.s: buffers/IndexBuffer.cpp.s
+.PHONY : buffers/IndexBuffer.s
 
 # target to generate assembly for a file
-Renderable2D.cpp.s:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.s
-.PHONY : Renderable2D.cpp.s
+buffers/IndexBuffer.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.s
+.PHONY : buffers/IndexBuffer.cpp.s
 
-Shader.o: Shader.cpp.o
-.PHONY : Shader.o
+buffers/VertexArray.o: buffers/VertexArray.cpp.o
+.PHONY : buffers/VertexArray.o
 
 # target to build an object file
-Shader.cpp.o:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o
-.PHONY : Shader.cpp.o
+buffers/VertexArray.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o
+.PHONY : buffers/VertexArray.cpp.o
 
-Shader.i: Shader.cpp.i
-.PHONY : Shader.i
+buffers/VertexArray.i: buffers/VertexArray.cpp.i
+.PHONY : buffers/VertexArray.i
 
 # target to preprocess a source file
-Shader.cpp.i:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Shader.cpp.i
-.PHONY : Shader.cpp.i
+buffers/VertexArray.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.i
+.PHONY : buffers/VertexArray.cpp.i
 
-Shader.s: Shader.cpp.s
-.PHONY : Shader.s
+buffers/VertexArray.s: buffers/VertexArray.cpp.s
+.PHONY : buffers/VertexArray.s
 
 # target to generate assembly for a file
-Shader.cpp.s:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Shader.cpp.s
-.PHONY : Shader.cpp.s
+buffers/VertexArray.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.s
+.PHONY : buffers/VertexArray.cpp.s
 
-ShaderProgram.o: ShaderProgram.cpp.o
-.PHONY : ShaderProgram.o
+buffers/VertexBuffer.o: buffers/VertexBuffer.cpp.o
+.PHONY : buffers/VertexBuffer.o
 
 # target to build an object file
-ShaderProgram.cpp.o:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o
-.PHONY : ShaderProgram.cpp.o
+buffers/VertexBuffer.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o
+.PHONY : buffers/VertexBuffer.cpp.o
 
-ShaderProgram.i: ShaderProgram.cpp.i
-.PHONY : ShaderProgram.i
+buffers/VertexBuffer.i: buffers/VertexBuffer.cpp.i
+.PHONY : buffers/VertexBuffer.i
 
 # target to preprocess a source file
-ShaderProgram.cpp.i:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.i
-.PHONY : ShaderProgram.cpp.i
+buffers/VertexBuffer.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.i
+.PHONY : buffers/VertexBuffer.cpp.i
 
-ShaderProgram.s: ShaderProgram.cpp.s
-.PHONY : ShaderProgram.s
+buffers/VertexBuffer.s: buffers/VertexBuffer.cpp.s
+.PHONY : buffers/VertexBuffer.s
 
 # target to generate assembly for a file
-ShaderProgram.cpp.s:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.s
-.PHONY : ShaderProgram.cpp.s
+buffers/VertexBuffer.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.s
+.PHONY : buffers/VertexBuffer.cpp.s
 
-SimpleRenderer2D.o: SimpleRenderer2D.cpp.o
-.PHONY : SimpleRenderer2D.o
+models/Mesh.o: models/Mesh.cpp.o
+.PHONY : models/Mesh.o
 
 # target to build an object file
-SimpleRenderer2D.cpp.o:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o
-.PHONY : SimpleRenderer2D.cpp.o
+models/Mesh.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o
+.PHONY : models/Mesh.cpp.o
 
-SimpleRenderer2D.i: SimpleRenderer2D.cpp.i
-.PHONY : SimpleRenderer2D.i
+models/Mesh.i: models/Mesh.cpp.i
+.PHONY : models/Mesh.i
 
 # target to preprocess a source file
-SimpleRenderer2D.cpp.i:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.i
-.PHONY : SimpleRenderer2D.cpp.i
+models/Mesh.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.i
+.PHONY : models/Mesh.cpp.i
 
-SimpleRenderer2D.s: SimpleRenderer2D.cpp.s
-.PHONY : SimpleRenderer2D.s
+models/Mesh.s: models/Mesh.cpp.s
+.PHONY : models/Mesh.s
 
 # target to generate assembly for a file
-SimpleRenderer2D.cpp.s:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.s
-.PHONY : SimpleRenderer2D.cpp.s
+models/Mesh.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.s
+.PHONY : models/Mesh.cpp.s
 
-VertexArray.o: VertexArray.cpp.o
-.PHONY : VertexArray.o
+models/Model.o: models/Model.cpp.o
+.PHONY : models/Model.o
 
 # target to build an object file
-VertexArray.cpp.o:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o
-.PHONY : VertexArray.cpp.o
+models/Model.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o
+.PHONY : models/Model.cpp.o
 
-VertexArray.i: VertexArray.cpp.i
-.PHONY : VertexArray.i
+models/Model.i: models/Model.cpp.i
+.PHONY : models/Model.i
 
 # target to preprocess a source file
-VertexArray.cpp.i:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.i
-.PHONY : VertexArray.cpp.i
+models/Model.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.i
+.PHONY : models/Model.cpp.i
 
-VertexArray.s: VertexArray.cpp.s
-.PHONY : VertexArray.s
+models/Model.s: models/Model.cpp.s
+.PHONY : models/Model.s
 
 # target to generate assembly for a file
-VertexArray.cpp.s:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.s
-.PHONY : VertexArray.cpp.s
+models/Model.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.s
+.PHONY : models/Model.cpp.s
 
-Window.o: Window.cpp.o
-.PHONY : Window.o
+shaderManager/Shader.o: shaderManager/Shader.cpp.o
+.PHONY : shaderManager/Shader.o
 
 # target to build an object file
-Window.cpp.o:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Window.cpp.o
-.PHONY : Window.cpp.o
+shaderManager/Shader.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o
+.PHONY : shaderManager/Shader.cpp.o
 
-Window.i: Window.cpp.i
-.PHONY : Window.i
+shaderManager/Shader.i: shaderManager/Shader.cpp.i
+.PHONY : shaderManager/Shader.i
 
 # target to preprocess a source file
-Window.cpp.i:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Window.cpp.i
-.PHONY : Window.cpp.i
+shaderManager/Shader.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.i
+.PHONY : shaderManager/Shader.cpp.i
 
-Window.s: Window.cpp.s
-.PHONY : Window.s
+shaderManager/Shader.s: shaderManager/Shader.cpp.s
+.PHONY : shaderManager/Shader.s
 
 # target to generate assembly for a file
-Window.cpp.s:
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Window.cpp.s
-.PHONY : Window.cpp.s
+shaderManager/Shader.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.s
+.PHONY : shaderManager/Shader.cpp.s
+
+shaderManager/ShaderProgram.o: shaderManager/ShaderProgram.cpp.o
+.PHONY : shaderManager/ShaderProgram.o
+
+# target to build an object file
+shaderManager/ShaderProgram.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o
+.PHONY : shaderManager/ShaderProgram.cpp.o
+
+shaderManager/ShaderProgram.i: shaderManager/ShaderProgram.cpp.i
+.PHONY : shaderManager/ShaderProgram.i
+
+# target to preprocess a source file
+shaderManager/ShaderProgram.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.i
+.PHONY : shaderManager/ShaderProgram.cpp.i
+
+shaderManager/ShaderProgram.s: shaderManager/ShaderProgram.cpp.s
+.PHONY : shaderManager/ShaderProgram.s
+
+# target to generate assembly for a file
+shaderManager/ShaderProgram.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.s
+.PHONY : shaderManager/ShaderProgram.cpp.s
+
+texturing/Texture.o: texturing/Texture.cpp.o
+.PHONY : texturing/Texture.o
+
+# target to build an object file
+texturing/Texture.cpp.o:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o
+.PHONY : texturing/Texture.cpp.o
+
+texturing/Texture.i: texturing/Texture.cpp.i
+.PHONY : texturing/Texture.i
+
+# target to preprocess a source file
+texturing/Texture.cpp.i:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.i
+.PHONY : texturing/Texture.cpp.i
+
+texturing/Texture.s: texturing/Texture.cpp.s
+.PHONY : texturing/Texture.s
+
+# target to generate assembly for a file
+texturing/Texture.cpp.s:
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build && $(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.s
+.PHONY : texturing/Texture.cpp.s
 
 # Help Target
 help:
@@ -292,27 +340,33 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... graphics"
-	@echo "... Buffer.o"
-	@echo "... Buffer.i"
-	@echo "... Buffer.s"
-	@echo "... Renderable2D.o"
-	@echo "... Renderable2D.i"
-	@echo "... Renderable2D.s"
-	@echo "... Shader.o"
-	@echo "... Shader.i"
-	@echo "... Shader.s"
-	@echo "... ShaderProgram.o"
-	@echo "... ShaderProgram.i"
-	@echo "... ShaderProgram.s"
-	@echo "... SimpleRenderer2D.o"
-	@echo "... SimpleRenderer2D.i"
-	@echo "... SimpleRenderer2D.s"
-	@echo "... VertexArray.o"
-	@echo "... VertexArray.i"
-	@echo "... VertexArray.s"
-	@echo "... Window.o"
-	@echo "... Window.i"
-	@echo "... Window.s"
+	@echo "... VertLineRenderer.o"
+	@echo "... VertLineRenderer.i"
+	@echo "... VertLineRenderer.s"
+	@echo "... buffers/IndexBuffer.o"
+	@echo "... buffers/IndexBuffer.i"
+	@echo "... buffers/IndexBuffer.s"
+	@echo "... buffers/VertexArray.o"
+	@echo "... buffers/VertexArray.i"
+	@echo "... buffers/VertexArray.s"
+	@echo "... buffers/VertexBuffer.o"
+	@echo "... buffers/VertexBuffer.i"
+	@echo "... buffers/VertexBuffer.s"
+	@echo "... models/Mesh.o"
+	@echo "... models/Mesh.i"
+	@echo "... models/Mesh.s"
+	@echo "... models/Model.o"
+	@echo "... models/Model.i"
+	@echo "... models/Model.s"
+	@echo "... shaderManager/Shader.o"
+	@echo "... shaderManager/Shader.i"
+	@echo "... shaderManager/Shader.s"
+	@echo "... shaderManager/ShaderProgram.o"
+	@echo "... shaderManager/ShaderProgram.i"
+	@echo "... shaderManager/ShaderProgram.s"
+	@echo "... texturing/Texture.o"
+	@echo "... texturing/Texture.i"
+	@echo "... texturing/Texture.s"
 .PHONY : help
 
 

@@ -21,6 +21,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Mesh.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Model.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/VertLineRenderer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/Transform.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/Camera.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/FileUtils.cpp" isTestSource="false" />
@@ -31,16 +33,20 @@
       <sourceFolder url="file://$MODULE_DIR$/src/util/Timer.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/DebugGL.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/util/DebugGL.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/Scene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/GLFWWindow.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/GLFWWindow.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/input/GLFWInput.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/input/GLFWInput.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/input/Keyboard.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/input/Keyboard.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/input/GLFWKeyboard.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/input/GLFWKeyboard.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/input/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/cmake/FindASSIMP.cmake" isTestSource="false" />
@@ -50,14 +56,14 @@
       <library name="Header Search Paths">
         <CLASSES>
           <root url="file:///usr/include" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
           <root url="file:///usr/local/include" />
         </CLASSES>
         <SOURCES>
           <root url="file:///usr/include" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
           <root url="file:///usr/local/include" />
         </SOURCES>
       </library>

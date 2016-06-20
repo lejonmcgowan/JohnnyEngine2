@@ -49,187 +49,237 @@ include src/graphics/CMakeFiles/graphics.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/graphics/CMakeFiles/graphics.dir/flags.make
 
-src/graphics/CMakeFiles/graphics.dir/Window.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
-src/graphics/CMakeFiles/graphics.dir/Window.cpp.o: ../src/graphics/Window.cpp
+src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o: ../src/graphics/shaderManager/Shader.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/Window.cpp.o"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Window.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Window.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/shaderManager/Shader.cpp
 
-src/graphics/CMakeFiles/graphics.dir/Window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Window.cpp.i"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Window.cpp > CMakeFiles/graphics.dir/Window.cpp.i
+src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/shaderManager/Shader.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/shaderManager/Shader.cpp > CMakeFiles/graphics.dir/shaderManager/Shader.cpp.i
 
-src/graphics/CMakeFiles/graphics.dir/Window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Window.cpp.s"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Window.cpp -o CMakeFiles/graphics.dir/Window.cpp.s
+src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/shaderManager/Shader.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/shaderManager/Shader.cpp -o CMakeFiles/graphics.dir/shaderManager/Shader.cpp.s
 
-src/graphics/CMakeFiles/graphics.dir/Window.cpp.o.requires:
-.PHONY : src/graphics/CMakeFiles/graphics.dir/Window.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o.requires
 
-src/graphics/CMakeFiles/graphics.dir/Window.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/Window.cpp.o.requires
-	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Window.cpp.o.provides.build
-.PHONY : src/graphics/CMakeFiles/graphics.dir/Window.cpp.o.provides
+src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o.provides
 
-src/graphics/CMakeFiles/graphics.dir/Window.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/Window.cpp.o
+src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o
 
-src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
-src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o: ../src/graphics/Shader.cpp
+src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o: ../src/graphics/shaderManager/ShaderProgram.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Shader.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/shaderManager/ShaderProgram.cpp
 
-src/graphics/CMakeFiles/graphics.dir/Shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Shader.cpp.i"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Shader.cpp > CMakeFiles/graphics.dir/Shader.cpp.i
+src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/shaderManager/ShaderProgram.cpp > CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.i
 
-src/graphics/CMakeFiles/graphics.dir/Shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Shader.cpp.s"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Shader.cpp -o CMakeFiles/graphics.dir/Shader.cpp.s
+src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/shaderManager/ShaderProgram.cpp -o CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.s
 
-src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o.requires:
-.PHONY : src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o.requires
 
-src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o.requires
-	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o.provides.build
-.PHONY : src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o.provides
+src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o.provides
 
-src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o
+src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o
 
-src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
-src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o: ../src/graphics/ShaderProgram.cpp
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o: ../src/graphics/buffers/VertexBuffer.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/ShaderProgram.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/ShaderProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/VertexBuffer.cpp
 
-src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/ShaderProgram.cpp.i"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/ShaderProgram.cpp > CMakeFiles/graphics.dir/ShaderProgram.cpp.i
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/VertexBuffer.cpp > CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.i
 
-src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/ShaderProgram.cpp.s"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/ShaderProgram.cpp -o CMakeFiles/graphics.dir/ShaderProgram.cpp.s
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/VertexBuffer.cpp -o CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.s
 
-src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o.requires:
-.PHONY : src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o.requires
 
-src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o.requires
-	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o.provides.build
-.PHONY : src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o.provides
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o.provides
 
-src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o
 
-src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
-src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o: ../src/graphics/Buffer.cpp
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o: ../src/graphics/buffers/VertexArray.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Buffer.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/VertexArray.cpp
 
-src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Buffer.cpp.i"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Buffer.cpp > CMakeFiles/graphics.dir/Buffer.cpp.i
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/buffers/VertexArray.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/VertexArray.cpp > CMakeFiles/graphics.dir/buffers/VertexArray.cpp.i
 
-src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Buffer.cpp.s"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Buffer.cpp -o CMakeFiles/graphics.dir/Buffer.cpp.s
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/buffers/VertexArray.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/VertexArray.cpp -o CMakeFiles/graphics.dir/buffers/VertexArray.cpp.s
 
-src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o.requires:
-.PHONY : src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o.requires
 
-src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o.requires
-	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o.provides.build
-.PHONY : src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o.provides
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o.provides
 
-src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o
+src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o
 
-src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
-src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o: ../src/graphics/VertexArray.cpp
+src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o: ../src/graphics/buffers/IndexBuffer.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/VertexArray.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/VertexArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/IndexBuffer.cpp
 
-src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/VertexArray.cpp.i"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/VertexArray.cpp > CMakeFiles/graphics.dir/VertexArray.cpp.i
+src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/IndexBuffer.cpp > CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.i
 
-src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/VertexArray.cpp.s"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/VertexArray.cpp -o CMakeFiles/graphics.dir/VertexArray.cpp.s
+src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/buffers/IndexBuffer.cpp -o CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.s
 
-src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o.requires:
-.PHONY : src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o.requires
 
-src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o.requires
-	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o.provides.build
-.PHONY : src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o.provides
+src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o.provides
 
-src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o
+src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o
 
-src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
-src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o: ../src/graphics/Renderable2D.cpp
+src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o: ../src/graphics/VertLineRenderer.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/Renderable2D.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Renderable2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/VertLineRenderer.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/VertLineRenderer.cpp
 
-src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/Renderable2D.cpp.i"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Renderable2D.cpp > CMakeFiles/graphics.dir/Renderable2D.cpp.i
+src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/VertLineRenderer.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/VertLineRenderer.cpp > CMakeFiles/graphics.dir/VertLineRenderer.cpp.i
 
-src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/Renderable2D.cpp.s"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/Renderable2D.cpp -o CMakeFiles/graphics.dir/Renderable2D.cpp.s
+src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/VertLineRenderer.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/VertLineRenderer.cpp -o CMakeFiles/graphics.dir/VertLineRenderer.cpp.s
 
-src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o.requires:
-.PHONY : src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o.requires
 
-src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o.requires
-	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o.provides.build
-.PHONY : src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o.provides
+src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o.provides
 
-src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o
+src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o
 
-src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
-src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o: ../src/graphics/SimpleRenderer2D.cpp
+src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o: ../src/graphics/texturing/Texture.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/SimpleRenderer2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/texturing/Texture.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/texturing/Texture.cpp
 
-src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.i"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/SimpleRenderer2D.cpp > CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.i
+src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/texturing/Texture.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/texturing/Texture.cpp > CMakeFiles/graphics.dir/texturing/Texture.cpp.i
 
-src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.s"
-	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/SimpleRenderer2D.cpp -o CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.s
+src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/texturing/Texture.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/texturing/Texture.cpp -o CMakeFiles/graphics.dir/texturing/Texture.cpp.s
 
-src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o.requires:
-.PHONY : src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o.requires
 
-src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o.requires
-	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o.provides.build
-.PHONY : src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o.provides
+src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o.provides
 
-src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o
+src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o
+
+src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o: ../src/graphics/models/Mesh.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/models/Mesh.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/models/Mesh.cpp
+
+src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/models/Mesh.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/models/Mesh.cpp > CMakeFiles/graphics.dir/models/Mesh.cpp.i
+
+src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/models/Mesh.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/models/Mesh.cpp -o CMakeFiles/graphics.dir/models/Mesh.cpp.s
+
+src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o.requires
+
+src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o.provides
+
+src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o
+
+src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o: src/graphics/CMakeFiles/graphics.dir/flags.make
+src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o: ../src/graphics/models/Model.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/graphics.dir/models/Model.cpp.o -c /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/models/Model.cpp
+
+src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graphics.dir/models/Model.cpp.i"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/models/Model.cpp > CMakeFiles/graphics.dir/models/Model.cpp.i
+
+src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graphics.dir/models/Model.cpp.s"
+	cd /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/src/graphics/models/Model.cpp -o CMakeFiles/graphics.dir/models/Model.cpp.s
+
+src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o.requires:
+.PHONY : src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o.requires
+
+src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o.provides: src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o.requires
+	$(MAKE) -f src/graphics/CMakeFiles/graphics.dir/build.make src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o.provides.build
+.PHONY : src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o.provides
+
+src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o.provides.build: src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o
 
 # Object files for target graphics
 graphics_OBJECTS = \
-"CMakeFiles/graphics.dir/Window.cpp.o" \
-"CMakeFiles/graphics.dir/Shader.cpp.o" \
-"CMakeFiles/graphics.dir/ShaderProgram.cpp.o" \
-"CMakeFiles/graphics.dir/Buffer.cpp.o" \
-"CMakeFiles/graphics.dir/VertexArray.cpp.o" \
-"CMakeFiles/graphics.dir/Renderable2D.cpp.o" \
-"CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o"
+"CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o" \
+"CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o" \
+"CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o" \
+"CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o" \
+"CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o" \
+"CMakeFiles/graphics.dir/VertLineRenderer.cpp.o" \
+"CMakeFiles/graphics.dir/texturing/Texture.cpp.o" \
+"CMakeFiles/graphics.dir/models/Mesh.cpp.o" \
+"CMakeFiles/graphics.dir/models/Model.cpp.o"
 
 # External object files for target graphics
 graphics_EXTERNAL_OBJECTS =
 
-src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/Window.cpp.o
-src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o
-src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o
-src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o
-src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o
-src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o
-src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o
+src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o
 src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/build.make
 src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libgraphics.a"
@@ -240,13 +290,15 @@ src/graphics/libgraphics.a: src/graphics/CMakeFiles/graphics.dir/link.txt
 src/graphics/CMakeFiles/graphics.dir/build: src/graphics/libgraphics.a
 .PHONY : src/graphics/CMakeFiles/graphics.dir/build
 
-src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/Window.cpp.o.requires
-src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/Shader.cpp.o.requires
-src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/ShaderProgram.cpp.o.requires
-src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/Buffer.cpp.o.requires
-src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/VertexArray.cpp.o.requires
-src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/Renderable2D.cpp.o.requires
-src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/SimpleRenderer2D.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/shaderManager/Shader.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/shaderManager/ShaderProgram.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/buffers/VertexBuffer.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/buffers/VertexArray.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/buffers/IndexBuffer.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/VertLineRenderer.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/texturing/Texture.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/models/Mesh.cpp.o.requires
+src/graphics/CMakeFiles/graphics.dir/requires: src/graphics/CMakeFiles/graphics.dir/models/Model.cpp.o.requires
 .PHONY : src/graphics/CMakeFiles/graphics.dir/requires
 
 src/graphics/CMakeFiles/graphics.dir/clean:

@@ -19,7 +19,7 @@ private:
     VertexArray vao;
     Color color;
 public:
-    TriangleScene(GLFWInput &input);
+    TriangleScene();
 
     virtual void init() override;
 

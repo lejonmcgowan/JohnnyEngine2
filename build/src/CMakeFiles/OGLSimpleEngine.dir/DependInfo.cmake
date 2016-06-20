@@ -11,6 +11,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/util/CMakeFiles/util.dir/DependInfo.cmake"
+        "/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/input/CMakeFiles/input.dir/DependInfo.cmake"
+        "/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/scenes/CMakeFiles/scenes.dir/DependInfo.cmake"
   "/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics/CMakeFiles/graphics.dir/DependInfo.cmake"
   )
 
@@ -18,11 +20,9 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 set(CMAKE_C_TARGET_INCLUDE_PATH
   ".."
   "/usr/local/include"
-  "/usr/include/libdrm"
-  "../src/GLEW_INCLDUE_DIRS"
+        "../ext/include"
   "../src"
   "../ext"
-  "../ext/include"
   "../shd"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

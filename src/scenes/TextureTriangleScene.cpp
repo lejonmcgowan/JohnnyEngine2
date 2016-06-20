@@ -2,11 +2,12 @@
 // Created by lejonmcgowan on 3/27/16.
 //
 
+#include <src/input/GLFWKeyboard.h>
 #include "TextureTriangleScene.h"
 
 
-TextureTriangleScene::TextureTriangleScene(GLFWInput &input) : Scene(input),
-                                                               checkerboardTex("myTex", GL_TEXTURE_2D,
+TextureTriangleScene::TextureTriangleScene() : Scene(),
+                                               checkerboardTex("myTex", GL_TEXTURE_2D,
                                                                                "assets/checkerboard.png")
 {
 
@@ -50,11 +51,11 @@ void TextureTriangleScene::step(float timestep)
 
 void TextureTriangleScene::render()
 {
-    if (input.isKeyPressed(GLFW_KEY_K))
+    if (Keyboard::isKeyPressed(GLFW_KEY_K))
         std::cout << "k is pressed" << std::endl;
-    if (input.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT))
+    if (Keyboard::isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT))
     {
-        glm::dvec2 position = input.getMousePosition();
+        glm::dvec2 position = GLFWKeyboard::getMousePosition();
         std::cout << position.x << " " << position.y << std::endl;
     }
     checkerboardTex.setTexUniform(shaderManager);

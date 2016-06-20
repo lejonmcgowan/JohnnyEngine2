@@ -5,15 +5,14 @@
 #ifndef OGLSIMPLEENGINE_SCENE_H
 #define OGLSIMPLEENGINE_SCENE_H
 
-#include <src/input/GLFWInput.h>
+#include <src/input/Keyboard.h>
 #include "Window.h"
 
 class Scene
 {
 protected:
-    GLFWInput &input;
 public:
-    Scene(GLFWInput &input) : input(input)
+    Scene()
     { }
 
     virtual void init() = 0;

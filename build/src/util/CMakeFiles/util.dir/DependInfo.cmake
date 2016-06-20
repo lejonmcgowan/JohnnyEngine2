@@ -18,11 +18,9 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 set(CMAKE_C_TARGET_INCLUDE_PATH
   ".."
   "/usr/local/include"
-  "/usr/include/libdrm"
-  "../src/GLEW_INCLDUE_DIRS"
+        "../ext/include"
   "../src"
   "../ext"
-  "../ext/include"
   "../shd"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

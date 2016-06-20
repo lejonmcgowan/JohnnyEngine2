@@ -35,6 +35,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/util/cmake_install.cmake")
+  include("/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/input/cmake_install.cmake")
+  include("/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/scenes/cmake_install.cmake")
   include("/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics/cmake_install.cmake")
 
 endif()

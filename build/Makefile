@@ -128,6 +128,32 @@ util/fast:
 .PHONY : util/fast
 
 #=============================================================================
+# Target rules for targets named input
+
+# Build rule for target.
+input: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 input
+.PHONY : input
+
+# fast build rule for target.
+input/fast:
+	$(MAKE) -f src/input/CMakeFiles/input.dir/build.make src/input/CMakeFiles/input.dir/build
+.PHONY : input/fast
+
+#=============================================================================
+# Target rules for targets named scenes
+
+# Build rule for target.
+scenes: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 scenes
+.PHONY : scenes
+
+# fast build rule for target.
+scenes/fast:
+	$(MAKE) -f src/scenes/CMakeFiles/scenes.dir/build.make src/scenes/CMakeFiles/scenes.dir/build
+.PHONY : scenes/fast
+
+#=============================================================================
 # Target rules for targets named graphics
 
 # Build rule for target.
@@ -150,6 +176,8 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... OGLSimpleEngine"
 	@echo "... util"
+	@echo "... input"
+	@echo "... scenes"
 	@echo "... graphics"
 .PHONY : help
 

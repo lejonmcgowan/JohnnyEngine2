@@ -22,7 +22,7 @@ private:
     Color color;
     Texture checkerboardTex;
 public:
-    TextureTriangleScene(GLFWInput &input);
+    TextureTriangleScene();
 
     virtual void init() override;
 

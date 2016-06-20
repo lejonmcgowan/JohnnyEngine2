@@ -3,9 +3,10 @@
 //
 
 #include <src/util/DebugGL.h>
+#include <src/input/GLFWKeyboard.h>
 #include "TriangleScene.h"
 
-TriangleScene::TriangleScene(GLFWInput &input) : Scene(input)
+TriangleScene::TriangleScene() : Scene()
 {
 
 }
@@ -40,11 +41,11 @@ void TriangleScene::step(float timestep)
 
 void TriangleScene::render()
 {
-    if (input.isKeyPressed(GLFW_KEY_K))
+    if (Keyboard::isKeyPressed(GLFW_KEY_K))
         std::cout << "k is pressed" << std::endl;
-    if (input.isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT))
+    if (Keyboard::isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT))
     {
-        glm::dvec2 position = input.getMousePosition();
+        glm::dvec2 position = GLFWKeyboard::getMousePosition();
         std::cout << position.x << " " << position.y << std::endl;
     }
 

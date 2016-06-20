@@ -1,3 +1,5 @@
 /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/CMakeFiles/OGLSimpleEngine.dir
 /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/util/CMakeFiles/util.dir
 /home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/graphics/CMakeFiles/graphics.dir
+/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/input/CMakeFiles/input.dir
+/home/lejonmcgowan/Dropbox/projects/OGLSimpleEngine/build/src/scenes/CMakeFiles/scenes.dir
