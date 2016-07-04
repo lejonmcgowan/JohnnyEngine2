@@ -5,6 +5,7 @@
 #include <src/scenes/TextureTriangleScene.h>
 #include <src/scenes/GLFWWindow.h>
 #include <src/input/GLFWKeyboard.h>
+#include <src/scenes/BasicModelScene.h>
 
 #define MODE 0
 
@@ -13,17 +14,16 @@ using namespace std;
 int main()
 {
     GLFWWindow window("Test Window", 800, 600);
-    window.setBackgroundColor(Color(0.5f, 0.0f, 0.0f, 1.0f));
+    window.setBackgroundColor(Color(0.1f, 0.1f, 0.1f, 1.0f));
     GLFWKeyboard::initialize(window.window);
 
-    TextureTriangleScene triangleScene;
-    triangleScene.setColor(Color(0.0f, 0.0f, 1.0f, 1.0f));
-    triangleScene.init();
+    BasicModelScene scene;
+    scene.init();
 
     while (!window.closed())
     {
         window.clear();
-        triangleScene.render();
+        scene.render();
         window.update();
     }
     return 0;

@@ -55,7 +55,7 @@ void TextureTriangleScene::render()
         std::cout << "k is pressed" << std::endl;
     if (Keyboard::isMouseButtonPressed(GLFW_MOUSE_BUTTON_LEFT))
     {
-        glm::dvec2 position = GLFWKeyboard::getMousePosition();
+        glm::vec2 position = GLFWKeyboard::getMousePosition();
         std::cout << position.x << " " << position.y << std::endl;
     }
     checkerboardTex.setTexUniform(shaderManager);

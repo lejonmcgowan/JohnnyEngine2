@@ -32,9 +32,9 @@ private:
     }
 
 public:
-    Camera() : translation(transform.getTranslation()),
-               rotation(transform.getRotation()),
-               scale(transform.getScale())
+    Camera() : translation(transform.getMutableTranslation()),
+               rotation(transform.getMutableRotation()),
+               scale(transform.getMutableScale())
     {
         translateTo(glm::vec3(0.0f, 0.0f, 3.0f));
         transform.rotateTo(glm::vec3(glm::radians(-90.f), 0.0f, 0.0f));
@@ -176,11 +176,11 @@ public:
     {
         if (Keyboard::isKeyHeld(GLFW_KEY_W))
             camera.forwardBy(sensitivity);
-        if (Keyboard::isKeyHeld((GLFW_KEY_A))
+        if (Keyboard::isKeyHeld(GLFW_KEY_A))
         camera.strafeBy(-sensitivity);
-        if (Keyboard::isKeyHeld((GLFW_KEY_S))
+        if (Keyboard::isKeyHeld(GLFW_KEY_S))
         camera.forwardBy(-sensitivity);
-        if (Keyboard::isKeyHeld((GLFW_KEY_D))
+        if (Keyboard::isKeyHeld(GLFW_KEY_D))
         camera.strafeBy(sensitivity);
     }
 

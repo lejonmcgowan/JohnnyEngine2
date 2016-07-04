@@ -11,6 +11,7 @@
 class Shader
 {
 private:
+    friend class UniformBuffer;
     GLuint handle;
     GLenum type;
     std::string filePath;

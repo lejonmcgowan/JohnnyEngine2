@@ -4,24 +4,36 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexArray.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOPrimitiveArray.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UniformBuffer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexBuffer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UniformData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOStructArray.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOStruct.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOPrimitive.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOStructArray.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOPrimitiveArray.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexBuffer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/IndexBuffer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOPrimitive.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexArray.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/VertexArray.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/VertLineRenderer.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOStruct.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UBOData.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/buffers/UniformBuffer.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/Transform.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/ShaderProgram.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/Shader.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/Shader.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/shaderManager/ShaderProgram.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Mesh.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/VertLineRenderer.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Model.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Mesh.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Model.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Mesh.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/graphics/models/Mesh.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/VertLineRenderer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/graphics/Transform.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/Camera.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/graphics/texturing/Texture.cpp" isTestSource="false" />
@@ -35,12 +47,14 @@
       <sourceFolder url="file://$MODULE_DIR$/src/util/DebugGL.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Scene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/GLFWWindow.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/GLFWWindow.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/GLFWWindow.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/BasicModelScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/Scene.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/TriangleScene.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/scenes/BasicModelScene.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/TextureTriangleScene.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/scenes/Window.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/input/Keyboard.h" isTestSource="false" />
@@ -55,15 +69,15 @@
     <orderEntry type="module-library">
       <library name="Header Search Paths">
         <CLASSES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
           <root url="file:///usr/include" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
           <root url="file:///usr/local/include" />
         </CLASSES>
         <SOURCES>
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed" />
+          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/4.8/include" />
           <root url="file:///usr/include" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-          <root url="file:///usr/lib/gcc/x86_64-linux-gnu/5/include" />
           <root url="file:///usr/local/include" />
         </SOURCES>
       </library>

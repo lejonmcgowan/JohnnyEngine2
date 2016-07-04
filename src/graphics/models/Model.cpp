@@ -4,15 +4,15 @@
 
 #include "Model.h"
 
-Model::Model(string const &path)
+Model::Model(const string &path)
 {
-    this->loadModel(path);
+    this->loadModel(FileUtils::getFullPath(path));
 }
 
-void Model::draw(ShaderProgram &shaderProgram)
+void Model::render(ShaderProgram &shaderProgram)
 {
-    for (auto mesh: meshes)
-        mesh.draw(shaderProgram);
+    for (auto &mesh: meshes)
+        mesh.render(shaderProgram);
 }
 
 void Model::loadModel(string path)
@@ -59,13 +59,19 @@ Mesh Model::processMesh(aiMesh *assimpMesh, const aiScene *scene)
     for (GLuint i = 0; i < assimpMesh->mNumVertices; i++)
     {
         auto vertex = assimpMesh->mVertices[i];
-        auto normal = assimpMesh->mNormals[i];
-        auto binormal = assimpMesh->mBitangents[i];
+        mesh.addVertex(glm::vec3(vertex.x, vertex.y, vertex.z));
+        if (assimpMesh->mNormals)
+        {
+            auto normal = assimpMesh->mNormals[i];
+            mesh.addTangent(glm::vec3(normal.x, normal.y, normal.z));
+        }
+        if (assimpMesh->mBitangents)
+        {
+            auto binormal = assimpMesh->mBitangents[i];
+            mesh.addBinormal(glm::vec3(binormal.x, binormal.y, binormal.z));
+        }
         bool hasTexcoord = (bool) assimpMesh->mTextureCoords[0];
 
-        mesh.addVertex(glm::vec3(vertex.x, vertex.y, vertex.z));
-        mesh.addTangent(glm::vec3(normal.x, normal.y, normal.z));
-        mesh.addBinormal(glm::vec3(binormal.x, binormal.y, binormal.z));
         // Texture Coordinates
         if (hasTexcoord) // Does the mesh contain texture coordinates?
         {
@@ -125,4 +131,10 @@ void Model::loadMaterialTextures(Mesh &mesh, aiMaterial *mat, aiTextureType type
         }
         mesh.addTexture(*texture);
     }
+}
+
+void Model::init()
+{
+    for (Mesh &mesh: meshes)
+        mesh.init();
 }

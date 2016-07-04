@@ -15,7 +15,6 @@
 class IndexBuffer
 {
 private:
-    bool null = false;
     GLuint handle;
     GLenum bufferType = GL_ELEMENT_ARRAY_BUFFER;
     std::vector<GLuint> bufferData;
@@ -67,7 +66,9 @@ public:
     };
 
     void addData(std::vector<GLuint> &data);
-    bool isNull(){return null;}
+
+    bool isNull()
+    { return this == &nullIBO; }
 };
 
 

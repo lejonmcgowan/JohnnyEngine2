@@ -36,7 +36,7 @@ public:
     /*  Functions  */
     Mesh();
 
-    void draw(ShaderProgram &shaderProgram);
+    void render(ShaderProgram &shaderProgram);
 
     void init(GLenum drawType = GL_STATIC_DRAW);
 

@@ -15,7 +15,7 @@ Mesh::Mesh()
 }
 
 
-void Mesh::draw(ShaderProgram &shaderProgram)
+void Mesh::render(ShaderProgram &shaderProgram)
 {
     for (auto texture: textures)
     {
@@ -41,6 +41,7 @@ void Mesh::init(GLenum drawType)
         texture->init();
 
     vao.generate(drawType);
+
     numIndices = (int) vao.getIBOByName("vertex")->getBufferSize();
 }
 
@@ -57,7 +58,7 @@ void Mesh::addIndex(GLuint index)
 
 void Mesh::addUV(glm::vec2 uv)
 {
-    vao.getVBOByName("texcoord")->addData(uv);
+    vao.getVBOByName("texcoords")->addData(uv);
 }
 
 void Mesh::addTangent(glm::vec3 tangent)

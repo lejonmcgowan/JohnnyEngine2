@@ -7,20 +7,16 @@
 
 #define GLM_FORCE_RADIANS
 
-#include <glm/detail/type_vec.hpp>
-#include <glm/detail/type_vec3.hpp>
-#include <glm/detail/type_mat.hpp>
-#include <glm/gtc/type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/quaternion.hpp>
 #include <glm/gtx/quaternion.hpp>
-#include <glm/gtc/matrix_access.hpp>
 #include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtx/quaternion.hpp>
 
 #include <iostream>
-
 class Transform
 {
 private:
+    friend class Camera;
     glm::vec3 translation;
     glm::quat internalRot;
     glm::vec3 rotation;
@@ -34,12 +30,28 @@ private:
         internalRot = glm::quat(rotation);
     }
 
+    glm::vec3 &getMutableRotation()
+    {
+        return rotation;
+    }
+
+    glm::vec3 &getMutableTranslation()
+    {
+        return translation;
+    }
+
+    glm::vec3 &getMutableScale()
+    {
+        return scale;
+    }
+
 public:
     const glm::mat4 &getTransformMatrix()
     {
         if (updateTransform)
         {
-            if (std::abs(glm::quaternion::dot(internalRot, glm::quat(rotation)) < 0.001))
+            glm::quat currentRotation = glm::quat(rotation);
+            if (std::abs(glm::dot(internalRot, currentRotation) < 0.001))
                 updateQuat();
             transform = glm::mat4();
             transform *= glm::translate(glm::mat4(), translation);
@@ -79,10 +91,16 @@ public:
         return scale;
     }
 
-    void scaleTo(glm::vec3 &scale)
+    void scaleTo(glm::vec3 scale)
     {
         updateTransform = true;
         this->scale = scale;
+    }
+
+    void scaleTo(float scale)
+    {
+        updateTransform = true;
+        this->scale = glm::vec3(scale, scale, scale);
     }
 
     void scaleBy(float factor)
@@ -91,7 +109,7 @@ public:
         this->scale *= factor;
     }
 
-    void scaleBy(glm::vec3 &factor)
+    void scaleBy(glm::vec3 factor)
     {
         updateTransform = true;
         this->scale += factor;
@@ -105,7 +123,7 @@ public:
         scale.z += factor;
     }
 
-    void scaleIncreaseBy(glm::vec3 &factor)
+    void scaleIncreaseBy(glm::vec3 factor)
     {
         updateTransform = true;
         scale.x += factor.x;

@@ -1,2 +1,2 @@
-add_library(scenes Scene.h TriangleScene.cpp TriangleScene.h TextureTriangleScene.cpp TextureTriangleScene.h Window.cpp Window.h GLFWWindow.cpp GLFWWindow.h)
+add_library(scenes Scene.h TriangleScene.cpp TriangleScene.h TextureTriangleScene.cpp TextureTriangleScene.h Window.cpp Window.h GLFWWindow.cpp GLFWWindow.h BasicModelScene.cpp BasicModelScene.h)
 target_link_libraries(scenes graphics input)

@@ -13,7 +13,7 @@ VertLineRenderer::VertLineRenderer()
     shaderProgram.addShader(GL_FRAGMENT_SHADER, "shd/vertexLine.frag");
 
     shaderProgram.linkShaders();
-    //todo stream draw?
+    //todo stream render?
     vbo0 = new VertexBuffer("vbo0", 3);
     vbo1 = new VertexBuffer("vbo1", 3);
     vbo2 = new VertexBuffer("offsets", 4);

@@ -32,19 +32,19 @@ public:
     string directory;
 
     /*  Functions   */
-    Model(string const &path);
+    Model(const string &path);
 
-    void draw(ShaderProgram &shader);
+    void render(ShaderProgram &shader);
+
+    void init();
 
 private:
     /*  Functions   */
     void loadModel(string path);
-
     void processNode(aiNode *node, const aiScene *scene);
-
     Mesh processMesh(aiMesh *assimpMesh, const aiScene *scene);
-
     void loadMaterialTextures(Mesh &mesh, aiMaterial *mat, aiTextureType type, string typeName);
+
 };
 
 #endif //OGLSIMPLEENGINE_MODEL_H

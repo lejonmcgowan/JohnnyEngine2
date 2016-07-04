@@ -21,10 +21,10 @@ void IndexBuffer::bind() const
 
 void IndexBuffer::generate(GLenum drawType)
 {
-    assert(!null);
+    assert(!isNull());
     if (!configured)
     {
-        //todo: make some option (function parameter or private variable) to change draw type
+        //todo: make some option (function parameter or private variable) to change render type
         glBufferData(bufferType, bufferData.size() * sizeof(GLuint), &bufferData[0], drawType);
         //do NOT unbind EBO. will dissassosiate from VBO
         configured = true;
@@ -101,14 +101,10 @@ void IndexBuffer::addData(std::vector<GLuint> &data)
 
 IndexBuffer::IndexBuffer(bool init)
 {
-    if(init)
+    if (!isNull())
     {
         glGenBuffers(1, &handle);
         checkGLError;
-    }
-    else
-    {
-        null = true;
     }
 }
 

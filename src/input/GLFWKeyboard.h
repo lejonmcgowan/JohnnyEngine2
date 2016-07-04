@@ -21,10 +21,13 @@ private:
     static GLFWKeyboard *getInstance()
     { return new GLFWKeyboard(); };
 public:
-    static glm::dvec2 getMousePosition()
+    static glm::vec2 getMousePosition()
     {
-        glm::dvec2 position;
-        glfwGetCursorPos(windowcontext, &position.x, &position.y);
+        glm::vec2 position;
+        double x, y;
+        glfwGetCursorPos(windowcontext, &x, &y);
+        position.x = (float) x;
+        position.y = (float) y;
         return position;
     }
 
