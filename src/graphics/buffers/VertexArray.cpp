@@ -23,7 +23,7 @@ void VertexArray::addBuffer(GLuint index, VertexBuffer *vbo, IndexBuffer *ibo)
         BufferInfo bufferInfo(vbo,finalIBO,index);
     buffers.insert(std::pair<std::string,BufferInfo>(vbo->getName(), bufferInfo));
 
-    std::cout << "done" << std::endl;
+    // std::cout << "done" << std::endl;
 }
 
 void VertexArray::bind() const

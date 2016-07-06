@@ -20,7 +20,7 @@ private:
     ShaderProgram shaderManager;
     VertexArray vao;
     Color color;
-    Texture checkerboardTex;
+    std::shared_ptr<Texture> checkerboardTex;
 public:
     TextureTriangleScene();
 

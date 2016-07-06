@@ -15,11 +15,12 @@ void Model::render(ShaderProgram &shaderProgram)
         mesh.render(shaderProgram);
 }
 
-void Model::loadModel(string path)
+void Model::loadModel(string modelFile)
 {
+    this->baseDir = modelFile.substr(0, modelFile.rfind("/") + 1);;
     // Read file via ASSIMP
     Assimp::Importer importer;
-    const aiScene *scene = importer.ReadFile(path,
+    const aiScene *scene = importer.ReadFile(modelFile,
                                              aiProcess_Triangulate | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
     // Check for errors
     if (!scene || scene->mFlags == AI_SCENE_FLAGS_INCOMPLETE || !scene->mRootNode) // if is Not Zero
@@ -27,9 +28,6 @@ void Model::loadModel(string path)
         cout << "ERROR::ASSIMP:: " << importer.GetErrorString() << endl;
         return;
     }
-    // Retrieve the directory path of the filepath
-    directory = path.substr(0, path.find_last_of('/'));
-    cout << directory << std::endl;
     // Process ASSIMP's root node recursively
     processNode(scene->mRootNode, scene);
 }
@@ -116,20 +114,20 @@ Mesh Model::processMesh(aiMesh *assimpMesh, const aiScene *scene)
 
 void Model::loadMaterialTextures(Mesh &mesh, aiMaterial *mat, aiTextureType type, string baseName)
 {
-    vector<Texture> textures;
     for (GLuint i = 0; i < mat->GetTextureCount(type); i++)
     {
         //assimps special string structure. has a char buffer you can access directly
         aiString str;
         mat->GetTexture(type, i, &str);
-        std::string path(std::string(str.data));
-        auto texture = Texture::getTextureByPath(path);
+        std::string file(std::string(str.data));
+        file = baseDir + file;
+        auto texture = Texture::getTextureByPath(file);
         //if not in texturemap, make new texture
         if (texture == nullptr)
         {
-            texture = std::make_shared<Texture>(baseName + std::to_string(i + 1), GL_TEXTURE_2D, path);
+            texture = Texture::makeTexture(baseName + std::to_string(i + 1), GL_TEXTURE_2D, file);
         }
-        mesh.addTexture(*texture);
+        mesh.addTexture(texture);
     }
 }
 

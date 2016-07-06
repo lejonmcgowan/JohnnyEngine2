@@ -85,12 +85,17 @@ namespace FileUtils
 
         //current way to generate path on UNIX: take __FILE__
         std::string fullPath = __FILE__;
-        //take out actual file name to get current directory
-        fullPath = fullPath.substr(0, fullPath.rfind("/") + 1);
-        //and move up to known project root
-        fullPath += "../../";
-        fullPath += relativePath;
-
+        if (relativePath.find(fullPath.substr(0, fullPath.rfind("/") + 1)) == std::string::npos)
+        {
+            //take out actual file name to get current directory
+            fullPath = fullPath.substr(0, fullPath.rfind("/") + 1);
+            //and move up to known project root
+            fullPath += "../../";
+            fullPath += relativePath;
+        }
+            //if it's already a full path, do not change
+        else
+            fullPath = relativePath;
         return fullPath;
     }
 

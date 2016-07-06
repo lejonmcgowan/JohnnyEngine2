@@ -6,11 +6,9 @@
 #include "TextureTriangleScene.h"
 
 
-TextureTriangleScene::TextureTriangleScene() : Scene(),
-                                               checkerboardTex("myTex", GL_TEXTURE_2D,
-                                                                               "assets/checkerboard.png")
+TextureTriangleScene::TextureTriangleScene() : Scene()
 {
-
+    checkerboardTex = Texture::makeTexture("myTex", GL_TEXTURE_2D, "assets/checkerboard.png");
 }
 
 void TextureTriangleScene::init()
@@ -42,7 +40,7 @@ void TextureTriangleScene::init()
 
     vao.generate();
 
-    checkerboardTex.init();
+    checkerboardTex->init();
 }
 
 void TextureTriangleScene::step(float timestep)
@@ -58,7 +56,7 @@ void TextureTriangleScene::render()
         glm::vec2 position = GLFWKeyboard::getMousePosition();
         std::cout << position.x << " " << position.y << std::endl;
     }
-    checkerboardTex.setTexUniform(shaderManager);
+    checkerboardTex->setTexUniform(shaderManager);
     shaderManager.update();
     vao.bind();
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, NULL);

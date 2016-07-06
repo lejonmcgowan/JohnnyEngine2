@@ -21,12 +21,13 @@ void Mesh::render(ShaderProgram &shaderProgram)
     {
         texture->setTexUniform(shaderProgram);
     }
-
+    shaderProgram.update();
+    shaderProgram.bind();
     // Draw mesh
     vao.bind();
     glDrawElements(GL_TRIANGLES, numIndices, GL_UNSIGNED_INT, 0);
     vao.unbind();
-
+    shaderProgram.unbind();
     // Always good practice to set everything back to defaults once configured.
     for (auto texture: textures)
     {
@@ -38,7 +39,11 @@ void Mesh::render(ShaderProgram &shaderProgram)
 void Mesh::init(GLenum drawType)
 {
     for (auto texture: textures)
+    {
+        std::string name = texture->getName();
         texture->init();
+    }
+
 
     vao.generate(drawType);
 
@@ -68,7 +73,7 @@ void Mesh::addTangent(glm::vec3 tangent)
 
 void Mesh::addBinormal(glm::vec3 binormal)
 {
-    vao.getVBOByName("binormal")->addData(binormal);
+    vao.getVBOByName("bitangent")->addData(binormal);
 }
 
 void Mesh::addVertices(vector<glm::vec3> vertices)
@@ -101,8 +106,8 @@ void Mesh::addBinormals(vector<glm::vec3> binormals)
         addBinormal(binormal);
 }
 
-void Mesh::addTexture(Texture &texture)
+void Mesh::addTexture(std::shared_ptr<Texture> texture)
 {
-    textures.push_back(std::make_shared<Texture>(texture));
+    textures.push_back(texture);
 }
 

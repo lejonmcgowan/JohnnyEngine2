@@ -23,37 +23,11 @@ private:
     GLenum type;
     std::string path;
     unsigned int texNum;
-    std::string name;
+    std::string name, uniformName;
+
+    Texture(std::string name, GLenum type, std::string path, std::string string);
 public:
-
     unsigned int getNextTexID();
-
-    Texture(std::string name, GLenum type, std::string path) : name(name),
-                                                               type(type),
-                                                               path(FileUtils::getFullPath(path))
-    {
-        if (!initialized)
-            setup();
-
-        assert(type == GL_TEXTURE_1D ||
-               type == GL_TEXTURE_2D ||
-               type == GL_TEXTURE_3D ||
-               type == GL_TEXTURE_1D_ARRAY ||
-               type == GL_TEXTURE_2D_ARRAY ||
-               type == GL_TEXTURE_RECTANGLE ||
-               type == GL_TEXTURE_CUBE_MAP ||
-               type == GL_TEXTURE_BUFFER ||
-               type == GL_TEXTURE_2D_MULTISAMPLE ||
-               type == GL_TEXTURE_2D_MULTISAMPLE_ARRAY);
-
-        texNum = getNextTexID();
-        glGenTextures(1, &handle);
-        texturePool[name] = std::make_shared<Texture>(*this);
-    }
-
-    Texture(std::string name, GLenum type, const char *path) : Texture(name, type, std::string(path))
-    {
-    }
 
     void init();
 
@@ -81,31 +55,20 @@ public:
         return type;
     }
 
+    std::string getName() const
+    {
+        return name;
+    }
+
     ~Texture();
 
-    static std::shared_ptr<Texture> getTextureByName(std::string name)
-    {
-        std::shared_ptr<Texture> texture = nullptr;
-        if (texturePool.find(name) != texturePool.end())
-        {
-            texture = texturePool[name];
-        }
+    static std::shared_ptr<Texture> getTextureByName(std::string name);
 
-        return texture;
-    }
+    static std::shared_ptr<Texture> getTextureByPath(std::string path);
 
-    static std::shared_ptr<Texture> getTextureByPath(std::string path)
-    {
-        path = FileUtils::getFullPath(path);
-        std::shared_ptr<Texture> finalTexture = nullptr;
-        for (auto texture: texturePool)
-        {
-            if (texture.second->path == path)
-                finalTexture = texture.second;
-        }
+    static std::shared_ptr<Texture> makeTexture(std::string uniformName, GLenum type, std::string path);
 
-        return finalTexture;
-    }
+    static std::shared_ptr<Texture> makeTexture(std::string uniformName, GLenum type, const char *path);
 
 private:
     void setup();

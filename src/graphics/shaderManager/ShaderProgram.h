@@ -102,16 +102,17 @@ public:
             Uniform &uniform = foundUniform->second;
             uniform.setValue(value);
         }
-        else if(std::find(notFoundList.begin(),notFoundList.end(),name) == notFoundList.end())
-        {
-            std::cout << "Uniform with given name doesn't exist: " << name << std::endl;
-            std::cout << "list of uniforms" << std::endl;
-            for(auto uniform: uniforms)
-            {
-                std::cout << uniform.second.getName() <<  " of type" << uniform.second.getType() << std::endl;
-            }
-            notFoundList.push_back(name);
-        }
+        //uncomment for debugging
+//        else if(std::find(notFoundList.begin(),notFoundList.end(),name) == notFoundList.end())
+//        {
+//            std::cout << "Uniform with given name doesn't exist: " << name << std::endl;
+//            std::cout << "list of uniforms" << std::endl;
+//            for(auto uniform: uniforms)
+//            {
+//                std::cout << uniform.second.getName() <<  " of type" << uniform.second.getType() << std::endl;
+//            }
+//            notFoundList.push_back(name);
+//        }
     }
 
     void bind() const;

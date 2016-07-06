@@ -60,7 +60,7 @@ public:
 
     void addBinormals(vector<glm::vec3> binormal);
 
-    void addTexture(Texture &texture);
+    void addTexture(std::shared_ptr<Texture> texture);
 
 
 private:

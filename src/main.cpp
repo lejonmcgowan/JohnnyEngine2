@@ -23,6 +23,7 @@ int main()
     while (!window.closed())
     {
         window.clear();
+        scene.step(0.1f);
         scene.render();
         window.update();
     }
