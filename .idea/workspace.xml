@@ -48,7 +48,9 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae2de107-f733-4304-8fca-39fa140d96b7" name="Default" comment="now it works!">
+    <list default="true" id="ae2de107-f733-4304-8fca-39fa140d96b7" name="Default" comment="pushing just to make sure. now lets fix our camera">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/checkerboard.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cmake/FindASSIMP.cmake" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ext/lib/assimp" afterPath="$PROJECT_DIR$/ext/lib/assimp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -74,11 +76,9 @@
       <file leaf-file-name="BasicModelScene.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scenes/BasicModelScene.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-              <folding>
-                <element signature="e#45#74#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="512">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -233,9 +233,9 @@
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="x" value="98" />
-    <option name="y" value="36" />
+    <option name="y" value="-6" />
     <option name="width" value="2462" />
-    <option name="height" value="1664" />
+    <option name="height" value="1706" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -295,6 +295,48 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shd" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OGLSimpleEngine" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OGLSimpleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ext" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OGLSimpleEngine" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OGLSimpleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cmake" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OGLSimpleEngine" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OGLSimpleEngine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -655,11 +697,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467795563162</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="pushing just to make sure. now lets fix our camera">
+      <created>1471141758937</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1471141758937</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="98" y="36" width="2462" height="1664" extended-state="6" />
+    <frame x="98" y="-6" width="2462" height="1706" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20024371" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -713,7 +762,8 @@
     <MESSAGE value="keyboard static. Transform and camera implemented." />
     <MESSAGE value="mesh is rendering (but no texture). it's a start" />
     <MESSAGE value="now it works!" />
-    <option name="LAST_COMMIT_MESSAGE" value="now it works!" />
+    <MESSAGE value="pushing just to make sure. now lets fix our camera" />
+    <option name="LAST_COMMIT_MESSAGE" value="pushing just to make sure. now lets fix our camera" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -885,6 +935,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="e#131#180#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,11 +1137,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/scenes/BasicModelScene.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-          <folding>
-            <element signature="e#45#74#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="512">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
