@@ -48,8 +48,8 @@
     </ADDITIONAL_GENERATION_ENVIRONMENT>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae2de107-f733-4304-8fca-39fa140d96b7" name="Default" comment="updated gitignore so that the objs in the assets file are pushed">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+    <list default="true" id="ae2de107-f733-4304-8fca-39fa140d96b7" name="Default" comment="this should actually fix it">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/nanosuit2/nanosuit.obj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/nanosuit2/LICENSE.txt" afterPath="$PROJECT_DIR$/assets/nanosuit2/LICENSE.txt" />
     </list>
@@ -105,8 +105,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+            <state relative-caret-position="685">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -829,7 +829,14 @@
       <option name="project" value="LOCAL" />
       <updated>1471219859360</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="this should actually fix it">
+      <created>1471220031483</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1471220031483</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -891,7 +898,8 @@
     <MESSAGE value="forgot to push asset and cmake find file...again" />
     <MESSAGE value="forgot to push model assets....again" />
     <MESSAGE value="updated gitignore so that the objs in the assets file are pushed" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated gitignore so that the objs in the assets file are pushed" />
+    <MESSAGE value="this should actually fix it" />
+    <option name="LAST_COMMIT_MESSAGE" value="this should actually fix it" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -1269,8 +1277,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="50" column="75" selection-start-line="50" selection-start-column="75" selection-end-line="50" selection-end-column="75" />
+        <state relative-caret-position="685">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
           <folding />
         </state>
       </provider>
