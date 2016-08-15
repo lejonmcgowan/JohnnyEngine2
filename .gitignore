@@ -49,6 +49,8 @@ fabric.properties
 *.lo
 *.o
 *.obj
+#don't wanna ignore my model files, exclude assets directory here
+!assets/
 
 # Precompiled Headers
 *.gch
