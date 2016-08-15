@@ -48,9 +48,7 @@ fabric.properties
 *.slo
 *.lo
 *.o
-*.obj
-#don't wanna ignore my model files, exclude assets directory here
-!assets/
+# removed .obj for now for models. hope a buncha c libs don't get into here
 
 # Precompiled Headers
 *.gch
